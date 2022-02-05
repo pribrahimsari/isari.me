@@ -76,7 +76,7 @@ a {
 }
 .menu li a {
   font-size: 2rem;
-  color: #111;
+  /*color: #111;*/
   font-weight: 400;
   padding: 0 1rem;
   margin: 0 1rem;
