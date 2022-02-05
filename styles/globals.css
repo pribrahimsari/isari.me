@@ -58,6 +58,16 @@ a {
   }
 }
 
+/*.logo img {*/
+/*  display: block;*/
+/*  width: 120px;*/
+/*}*/
+/*@media (max-width: 600px) {*/
+/*  .logo {*/
+/*    display: inline-block;*/
+/*  }*/
+/*}*/
+
 .menu {
   margin: 0;
   padding: 0;
