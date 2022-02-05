@@ -20,11 +20,11 @@ h3 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 img {
@@ -46,10 +46,11 @@ a {
 }
 
 .header-wrapper {
-  padding: 2rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: 1rem solid #4299e1;
 }
 @media (max-width: 600px) {
   .header-wrapper {
@@ -75,9 +76,9 @@ a {
   display: flex;
 }
 .menu li a {
-  font-size: 2rem;
+  font-size: 1rem;
   /*color: #111;*/
-  font-weight: 400;
+  font-weight: 700;
   padding: 0 1rem;
   margin: 0 1rem;
   text-decoration: none;
@@ -107,5 +108,5 @@ a {
 }
 .copyright {
   margin-bottom: 20px;
-  font-size: 2rem;
+  font-size: 1rem;
 }
