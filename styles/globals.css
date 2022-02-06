@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Poppins", sans-serif;
   text-rendering: optimizeLegibility;
 }
 
@@ -117,24 +115,31 @@ a {
 
 /************ Menu & Hamburger Menu */
 :root{
-  --white: #f9f9f9;
-  --black: #36383F;
-  --grey: #85888C;
+  --menuTextColor: #36383F;
+  --menubg: rgba(245,245,245,0.9);
+  --blue: #4299e1;
+  --menuTextColorHover: #4299e1;
+}
+
+[data-theme='dark'] {
+  --menuTextColor: #f9f9f9;
+  --menubg: rgb(54 56 63 / 90%);
+  --menuTextColorHover: #4299e1;
 }
 
 /* Header */
 .header{
-  background-color: var(--black);
+  background-color: var(--menubg);
   position: sticky;
   top: 0;
   width: 100%;
   border-top: 0.6rem solid #4299e1;
+  box-shadow: 1px 1px 5px 0px #ECEFF1;
 }
 
 /* Logo */
 .logo{
   display: inline-block;
-  color: var(--white);
   font-size: 60px;
   margin-left: 2rem;
 
@@ -145,7 +150,7 @@ a {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: var(--black);
+  background-color: var(--menubg);
   overflow: hidden;
   max-height: 0;
   transition: max-height .3s ease-in-out;
@@ -174,17 +179,16 @@ a {
 .menu a{
   display: block;
   padding: 0;
-  color: var(--white);
+  color: var(--menuTextColor);
 
 }
 
 .menu a:hover{
-  background-color: var(--grey);
+  background-color: var(--menuTextColorHover);
+  color:white;
 }
 
-
 /* Menu Icon */
-
 .hamb{
   cursor: pointer;
   float: right;
@@ -193,7 +197,7 @@ a {
 
 
 .hamb-line {
-  background: var(--white);
+  background: var(--blue);
   display: block;
   height: 2px;
   position: relative;
@@ -203,7 +207,7 @@ a {
 
 .hamb-line::before,
 .hamb-line::after{
-  background: var(--white);
+  background: var(--blue);
   content: '';
   display: block;
   height: 100%;
@@ -232,7 +236,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  top:75px;
+  top:99px;
 }
 
 .side-menu:checked ~ .hamb .hamb-line {
@@ -271,6 +275,7 @@ a {
     position: relative;
     float: right;
     width: fit-content;
+    background-color: unset;
   }
 
   .menu{
@@ -286,8 +291,7 @@ a {
 
   .menu a:hover{
     background-color: transparent;
-    color: var(--grey);
-
+    color: var(--menuTextColorHover);
   }
 
   .hamb{

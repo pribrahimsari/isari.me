@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f18aa03-b840-4c78-a256-fb005eba53d3" name="Changes" comment="style update">
+    <list default="true" id="4f18aa03-b840-4c78-a256-fb005eba53d3" name="Changes" comment="responsive css menu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Menu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +21,14 @@
     <property name="ts.external.directory.path" value="P:\JS\isari.me\node_modules\typescript\lib" />
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="responsive css menu">
+      <created>1644110072954</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1644110072954</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -35,5 +41,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="responsive css menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="responsive css menu" />
   </component>
 </project>
