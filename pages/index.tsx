@@ -33,11 +33,11 @@ const Home: NextPage = () => {
     }, [vantaEffect]);
     return (
         <Layout>
+            <div className={styles.vantaBackground} ref={vantaRef}></div>
             <section>
-                <div style={{width: 500, height: 500}} ref={vantaRef}></div>
                 <h1>Hi, I'm İbrahim.</h1>
                 <h2>Web Developer based on Istanbul, TURKEY</h2>
-                <img src="https://via.placeholder.com/350x470" alt="my picture" />
+                <img src="https://via.placeholder.com/250x370" alt="my picture" />
                 <Link href="/about">
                     <a>
                         <button>More About Me</button>
@@ -45,15 +45,6 @@ const Home: NextPage = () => {
                 </Link>
                 <button>Download my CV as PDF</button>
                 {/*todo: section animated background */}
-            </section>
-
-            <section>
-                <h1>Some of my Works</h1>
-                <div>
-                    Works component(s)
-                    {/*todo: CRM, AkinAkbar, Mobile & Web Wedding Invitation */}
-                    {/*todo: screenshot, (in-picture) left-right arrows, tech-stack used, my role */}
-                </div>
             </section>
         </Layout>
     );
