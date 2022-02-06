@@ -1,3 +1,7 @@
+.aboutPageSection{
+    margin-top:5rem;
+}
+
 .aboutPageTitleDiv{
     display: flex;
     flex-direction: row;

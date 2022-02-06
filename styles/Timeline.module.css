@@ -172,13 +172,14 @@
 .desc {
     position: relative;
     margin: 1em 0 0 0;
-    padding: 1em;
+    padding: 0.8em;
     background: var(--menubg);
     -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
     -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
     box-shadow: 0 0 1px rgba(0,0,0,0.20);
     z-index: 15;
-    font-size:0.8rem;
+    font-size:0.75rem;
+    text-align: justify;
 }
 
 .directionL .desc,
@@ -187,6 +188,13 @@
     margin: 1em 1em 0 1em;
     padding: 1em;
     z-index: 15;
+}
+
+.desc ul{
+    padding: 0 0 0 1.5rem;
+}
+.desc li{
+    padding: 0;
 }
 
 @media(min-width: 725px){
@@ -239,7 +247,8 @@
     }
 
     .flag {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        white-space: nowrap;
     }
 
     .directionL .flag:after {
@@ -248,7 +257,7 @@
         top: 50%;
         margin-top: -8px;
         border: solid transparent;
-        border-left-color: rgb(254,254,254);
+        border-left-color: var(--menubg);
         border-width: 8px;
     }
 
@@ -256,7 +265,7 @@
         top: 50%;
         margin-top: -8px;
         border: solid transparent;
-        border-right-color: rgb(254,254,254);
+        border-right-color: var(--menubg);
         border-width: 8px;
         left: -8px;
     }
@@ -282,6 +291,10 @@
 
     .directionR .desc {
         margin: 1em 0 0 0.75em;
+    }
+
+    .desc li{
+        padding: 0.2rem 0;
     }
 }
 
