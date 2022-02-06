@@ -1,0 +1,53 @@
+.contactWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:2rem;
+    background-color: var(--menubg);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.contactInfo{
+    margin-right: 2rem;
+    padding-right: 2rem;
+    border-right: 1px solid var(--blueOfLogo);
+    width:50%;
+}
+
+.mailAnchor:hover{
+    color:var(--blueOfLogo);
+}
+
+.contactInfo iframe{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.contactWrapper form input,
+.contactWrapper form textarea
+{
+    width: 100%; /* Full width */
+    padding: 0.5rem; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-bottom: 0.3rem; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+@media (max-width: 1300px) {
+    .contactWrapper{
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .contactInfo{
+        margin: 1rem 0;
+        padding:0;
+        border-right: none;
+        width: 100%;
+    }
+
+}
