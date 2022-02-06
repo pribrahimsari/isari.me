@@ -1,13 +1,13 @@
 import Logo from "./Logo";
 import Menu from "./Menu";
-import ThemeChangerButton from "./ThemeChangerButton";
 
 const Header = () => {
     return (
-        <header className="header-wrapper">
+        <header className="header">
             <Logo />
+            <input className="side-menu" type="checkbox" id="side-menu"/>
+            <label className="hamb" htmlFor="side-menu"><span className="hamb-line"></span></label>
             <Menu />
-            <ThemeChangerButton />
         </header>
     );
 };

@@ -1,7 +1,8 @@
 import Link from "next/link";
+import ThemeChangerButton from "./ThemeChangerButton";
 
 const Menu = () => (
-    <nav>
+    <nav className="nav">
         <ul className="menu">
             <li>
                 <Link href="/">
@@ -22,6 +23,9 @@ const Menu = () => (
                 <Link href="/contact">
                     <a>Contact</a>
                 </Link>
+            </li>
+            <li>
+                <ThemeChangerButton />
             </li>
         </ul>
     </nav>
