@@ -4,10 +4,22 @@ const ThemeChangerButton = () => {
     const {theme, setTheme} = useTheme();
 
     return (
-        <div>
-            {theme && theme === "light" && <button onClick={() => setTheme("dark")}>Dark Mode</button>}
-            {theme && theme === "dark" && <button onClick={() => setTheme("light")}>Light Mode</button>}
-        </div>
+        <>
+            {theme && theme === "light" && (
+                <button className="iconBtn" onClick={() => setTheme("dark")}>
+                    <span className="material-icons">
+                        &#xe51c;
+                    </span>
+                </button>
+            )}
+            {theme && theme === "dark" && (
+                <button className="iconBtn" onClick={() => setTheme("light")}>
+                    <span className="material-icons">
+                        &#xe518;
+                    </span>
+                </button>
+            )}
+        </>
     );
 };
 
