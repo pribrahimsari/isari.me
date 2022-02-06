@@ -7,6 +7,7 @@
   --menuTextColorHover: #4299e1;
   --blueOfLogo: #2F72BC;
   --heroImageBorderColor: white;
+  --aboutImageBorderColor: #2F72BC;
 }
 
 [data-theme='dark'] {
@@ -14,6 +15,7 @@
   --menubg: rgb(54 56 63 / 90%);
   --menuTextColorHover: #4299e1;
   --heroImageBorderColor: #2F72BC;
+  --aboutImageBorderColor: white;
 }
 
 html,

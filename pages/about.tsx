@@ -10,36 +10,47 @@ const About: NextPage = () => {
                 <title>About Me | İbrahim SARI</title>
             </Head>
             <section>
-                <img src="https://via.placeholder.com/150x150" alt="my picture" />
-                <h1>İbrahim SARI</h1>
-                <h2>Web Developer based on Istanbul, TURKEY</h2>
-                <p>born 1989</p>
-                <p>about me text instructions</p>
-                <p>I love making somethings work, learning that I do not know, and teaching what I know.</p>
-                <p>I have been to 7 countries so far. I can communicate in both English and Turkish languages.</p>
-                <p>
-                    I had the opportunity to work with many kinds of people and teams. I've no problem with team
-                    cohesion, as I love teaching or learning new things.
-                </p>
-                <h2>Tech Stack</h2>
-                <ul>
-                    {/*todo: logos for techs*/}
-                    <li>ReactJS</li>
-                    <li>JavaScript</li>
-                    <li>TypeScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>PHP</li>
-                    <li>CodeIgniter</li>
-                    <li>Laravel</li>
-                    <li>MySQL</li>
-                    <li>jQuery</li>
-                </ul>
-                <button>Download my CV as PDF</button>
+                <div className={styles.aboutPageTitleDiv}>
+                    <div className={styles.circularLandscape}>
+                        <img src="hero-profile.jpg" alt="my picture" />
+                    </div>
+                    <div className={styles.aboutPageTitleTexts}>
+                        <h2>İbrahim SARI</h2>
+                        <h4>Web Developer based on Istanbul, TURKEY</h4>
+                    </div>
+                </div>
+                <div>
+                    <p>👶 Borned in 1989. I am {new Date().getFullYear() - 1989}.</p>
+                    <p>👨‍💻 I love making somethings work, learning and teaching.</p>
+                    <p>
+                        🎤 I have been to 7 countries so far. I can communicate in both English and Turkish languages.
+                    </p>
+                    <p>
+                        👨‍👩‍👦‍👦 I had the opportunity to work with many kinds of people and teams. I've no problem with team
+                        cohesion, as I love teaching or learning new things.
+                    </p>
+                    {/* todo: other details <p>about me text instructions</p>*/}
+                </div>
+                <div className={styles.techStack}>
+                    <h2>Tech Stack</h2>
+                    <div>
+                        <img src="assets/tech-stack/react.png" />
+                        <img src="assets/tech-stack/javascript.png" />
+                        <img src="assets/tech-stack/typescript.png" />
+                        <img src="assets/tech-stack/git.png" />
+                        <img src="assets/tech-stack/html.jpg" />
+                        <img src="assets/tech-stack/css.jpg" />
+                        <img src="assets/tech-stack/php.png" />
+                        <img src="assets/tech-stack/codeigniter.jpg" />
+                        <img src="assets/tech-stack/laravel.png" />
+                        <img src="assets/tech-stack/mysql.png" />
+                        <img src="assets/tech-stack/jquery.png" />
+                    </div>
+                </div>
             </section>
 
             <section>
-                <h1>Experience</h1>
+                <h2>Experience</h2>
                 <div>
                     <b>2010 - Now -- Software Developer & IT Consultant</b> <br />
                     Freelance
@@ -120,7 +131,7 @@ const About: NextPage = () => {
             </section>
 
             <section>
-                <h1>Education</h1>
+                <h2>Education</h2>
                 <p>I am completely self-taught, passioned and studious. Here are my all graduations:</p>
                 <div>
                     <b>2015 - 2019 -- Computer Programming</b> <br />
@@ -135,6 +146,7 @@ const About: NextPage = () => {
                     Faculty of Security Sciences, University of Turkish Police Academy
                 </div>
             </section>
+            <button>Download my CV as PDF</button>
         </Layout>
     );
 };
