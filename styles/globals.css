@@ -6,12 +6,14 @@
   --blue: #4299e1;
   --menuTextColorHover: #4299e1;
   --blueOfLogo: #2F72BC;
+  --heroImageBorderColor: white;
 }
 
 [data-theme='dark'] {
   --menuTextColor: #f9f9f9;
   --menubg: rgb(54 56 63 / 90%);
   --menuTextColorHover: #4299e1;
+  --heroImageBorderColor: #2F72BC;
 }
 
 html,
@@ -51,6 +53,20 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  background-color: var(--blueOfLogo);
+  border:none;
+  border-radius: 0.3rem;
+  color: white;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: DodgerBlue;
+}
+
 .iconBtn {
   background-color: var(--blueOfLogo);
   border:none;
@@ -73,6 +89,12 @@ a {
   min-height: 80vh;
   /*text-align: center;*/
   padding:1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 725px) {

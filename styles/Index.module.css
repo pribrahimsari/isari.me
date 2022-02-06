@@ -8,3 +8,72 @@
     right: 0;
     bottom: 0;
 }
+
+.heroSection{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.heroSection .circularLandscape img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* responsively circle landscape hero image */
+@media (max-width: 725px) {
+    .heroSection .circularLandscape{
+        display: inline-block;
+        /*position: relative;*/
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+        border:5px solid var(--heroImageBorderColor);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .heroSection .circularLandscape img{
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .heroTexts{
+        text-align: center;
+    }
+    .heroTexts div{
+        display: flex;
+        flex-direction: column;
+    }
+    .heroTexts div button{
+        margin:0.5rem 1rem;
+        width: -webkit-fill-available;
+    }
+}
+
+@media (min-width: 725px) {
+    .heroSection{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .heroSection .circularLandscape img{
+        border: 2px solid var(--heroImageBorderColor);
+        border-radius: 0.8rem;
+    }
+
+    .heroTexts h2{
+        margin-top: 0;
+    }
+
+    .heroTexts div{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .heroTexts div button{
+        margin:0 2rem 0 0;
+    }
+}
