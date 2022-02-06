@@ -46,60 +46,6 @@ a {
   /*text-align: center;*/
 }
 
-.header-wrapper {
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1rem solid #4299e1;
-}
-@media (max-width: 600px) {
-  .header-wrapper {
-    display: block;
-    text-align: center;
-  }
-}
-
-/*.logo img {*/
-/*  display: block;*/
-/*  width: 120px;*/
-/*}*/
-/*@media (max-width: 600px) {*/
-/*  .logo {*/
-/*    display: inline-block;*/
-/*  }*/
-/*}*/
-
-/*.menu {*/
-/*  margin: 0;*/
-/*  padding: 0;*/
-/*  list-style: none;*/
-/*  display: flex;*/
-/*}*/
-/*.menu li a {*/
-/*  font-size: 1rem;*/
-/*  !*color: #111;*!*/
-/*  font-weight: 700;*/
-/*  padding: 0 1rem;*/
-/*  margin: 0 1rem;*/
-/*  text-decoration: none;*/
-/*}*/
-/*.menu li a:hover {*/
-/*  border-bottom: 2px solid #F7E018;*/
-/*}*/
-/*@media (max-width: 600px) {*/
-/*  .menu {*/
-/*    display: block;*/
-/*    margin-top: 3rem;*/
-/*  }*/
-/*  .menu li {*/
-/*    display: inline-block;*/
-/*  }*/
-/*  .menu li a {*/
-/*    font-size: 1.3rem;*/
-/*  }*/
-/*}*/
-
 .footer-wrapper {
   text-align: center;
   margin-top: 4rem;
@@ -113,7 +59,9 @@ a {
 }
 
 
-/************ Menu & Hamburger Menu */
+/**********************
+Menu & Hamburger Menu
+***********************/
 :root{
   --menuTextColor: #36383F;
   --menubg: rgba(245,245,245,0.9);
@@ -195,14 +143,12 @@ a {
   padding: 40px 20px;
 }
 
-
 .hamb-line {
   background: var(--blue);
   display: block;
   height: 2px;
   position: relative;
   width: 24px;
-
 }
 
 .hamb-line::before,
@@ -224,13 +170,11 @@ a {
   top: -5px;
 }
 
-
 .side-menu {
   display: none;
 }
 
 /* Toggle menu icon */
-
 .side-menu:checked ~ nav{
   max-height: 100%;
   display: flex;
@@ -246,7 +190,6 @@ a {
 .side-menu:checked ~ .hamb .hamb-line::before {
   transform: rotate(-45deg);
   top:0;
-
 }
 
 .side-menu:checked ~ .hamb .hamb-line::after {
@@ -254,9 +197,7 @@ a {
   top:0;
 }
 
-
 /* Responsiveness */
-
 @media (min-width: 725px) {
   .header{
     padding: 0 2rem;;
@@ -297,5 +238,4 @@ a {
   .hamb{
     display: none;
   }
-
 }
