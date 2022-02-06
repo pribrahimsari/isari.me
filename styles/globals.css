@@ -3,6 +3,7 @@
 :root{
   --menuTextColor: #36383F;
   --menubg: rgba(245,245,245,0.9);
+  --workscardbg: #fff;
   --blue: #4299e1;
   --menuTextColorHover: #4299e1;
   --blueOfLogo: #2F72BC;
@@ -13,6 +14,7 @@
 [data-theme='dark'] {
   --menuTextColor: #f9f9f9;
   --menubg: rgb(54 56 63 / 90%);
+  --workscardbg: rgb(54 56 63 / 90%);
   --menuTextColorHover: #4299e1;
   --heroImageBorderColor: #2F72BC;
   --aboutImageBorderColor: white;

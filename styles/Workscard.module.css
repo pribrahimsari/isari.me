@@ -1,0 +1,91 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    margin: 10px;
+    background-color: var(--workscardbg);
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+}
+.cardHeader{
+    position:relative;
+}
+.cardHeader .yearTag{
+    position: absolute;
+    top:1rem;
+    left:1rem
+}
+.cardHeader img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0.6rem;
+    min-height: 220px;
+}
+
+.cardBody h4{
+    margin: 0.5rem 0;
+}
+
+.tagWrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: #cccccc;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    margin: 0 0.4rem 0 0;
+    color: #fff;
+    padding: 2px 10px;
+    text-transform: uppercase;
+}
+.tagTeal {
+    background-color: #47bcd4;
+}
+.tagPurple {
+    background-color: #5e76bf;
+}
+.tagPink {
+    background-color: #cd5b9f;
+}
+.tagBlue {
+    background-color: var(--blueOfLogo);
+}
+
+.cardBody p {
+    font-size: 0.8rem;
+    margin: 0 0 1rem;
+}
+.buttons {
+    display: flex;
+    margin-top: auto;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.buttons img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.userInfo h5 {
+    margin: 0;
+}
+.userInfo small {
+    color: #545d7a;
+}

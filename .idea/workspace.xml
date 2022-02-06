@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f18aa03-b840-4c78-a256-fb005eba53d3" name="Changes" comment="remove useless css">
+    <list default="true" id="4f18aa03-b840-4c78-a256-fb005eba53d3" name="Changes" comment="contact page fetch onclick send">
+      <change afterPath="$PROJECT_DIR$/styles/Workscard.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/works.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/works.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Works.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Works.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+    </list>
+    <list id="45e08d81-ad30-4666-afe0-08e0bcde55ea" name="do not commit" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,14 +18,73 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="e728db13-3e8f-45ec-8929-13d003c36624" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../_WORK/VenueX" />
-    <property name="ts.external.directory.path" value="P:\JS\isari.me\node_modules\typescript\lib" />
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="3" end1="4" start2="3" end2="5" changelist="4f18aa03-b840-4c78-a256-fb005eba53d3" />
+        <range start1="5" end1="5" start2="6" end2="8" changelist="4f18aa03-b840-4c78-a256-fb005eba53d3" />
+        <range start1="6" end1="6" start2="9" end2="12" changelist="4f18aa03-b840-4c78-a256-fb005eba53d3" />
+        <range start1="14" end1="14" start2="20" end2="21" changelist="4f18aa03-b840-4c78-a256-fb005eba53d3" />
+        <range start1="17" end1="17" start2="24" end2="48" changelist="4f18aa03-b840-4c78-a256-fb005eba53d3" />
+        <range start1="19" end1="20" start2="50" end2="59" changelist="4f18aa03-b840-4c78-a256-fb005eba53d3" />
+        <range start1="21" end1="21" start2="60" end2="84" changelist="4f18aa03-b840-4c78-a256-fb005eba53d3" />
+        <range start1="22" end1="22" start2="85" end2="86" changelist="4f18aa03-b840-4c78-a256-fb005eba53d3" />
+        <range start1="44" end1="45" start2="108" end2="195" changelist="4f18aa03-b840-4c78-a256-fb005eba53d3" />
+        <range start1="47" end1="47" start2="197" end2="200" changelist="45e08d81-ad30-4666-afe0-08e0bcde55ea" />
+        <range start1="62" end1="63" start2="215" end2="231" changelist="45e08d81-ad30-4666-afe0-08e0bcde55ea" />
+      </ranges>
+    </file>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="24jiMv2p5GGsEkfC10y82Ornalj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/styles" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="P:\JS\isari.me\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="ts.external.directory.path" value="P:\JS\isari.me\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="P:\JS\isari.me\styles" />
+      <recent name="P:\JS\isari.me\public" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="responsive css menu">
       <created>1644110072954</created>
@@ -42,8 +107,97 @@
       <option name="project" value="LOCAL" />
       <updated>1644112873698</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="content wrapper style">
+      <created>1644113564930</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1644113564930</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add Google Material Icon and complete menu and header">
+      <created>1644115817309</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1644115817309</updated>
+    </task>
+    <task id="LOCAL-00006" summary="change FontAwesome and complete Footer">
+      <created>1644117969759</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1644117969759</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add vanta js &amp; three, test in a div">
+      <created>1644120476923</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1644120476923</updated>
+    </task>
+    <task id="LOCAL-00008" summary="css of home">
+      <created>1644121991674</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1644121991674</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f18aa03-b840-4c78-a256-fb005eba53d3" name="Changes" comment="css of home" />
+      <created>1644150357740</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644150357740</updated>
+      <workItem from="1644150359197" duration="13676000" />
+      <workItem from="1644169857465" duration="17016000" />
+    </task>
+    <task id="LOCAL-00009" summary="home page completed">
+      <created>1644157519139</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1644157519139</updated>
+    </task>
+    <task id="LOCAL-00010" summary="about page style">
+      <created>1644162826760</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1644162826760</updated>
+    </task>
+    <task id="LOCAL-00011" summary="basic dummy timeline setup for experience and education">
+      <created>1644165053374</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1644165053374</updated>
+    </task>
+    <task id="LOCAL-00012" summary="about page is ready">
+      <created>1644174625559</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1644174625559</updated>
+    </task>
+    <task id="LOCAL-00013" summary="contact page styling">
+      <created>1644177491317</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1644177491317</updated>
+    </task>
+    <task id="LOCAL-00014" summary="contact page fetch onclick send">
+      <created>1644182330039</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1644182330039</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -60,6 +214,21 @@
     <MESSAGE value="responsive css menu" />
     <MESSAGE value="colorize menu for dark and light theme" />
     <MESSAGE value="remove useless css" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove useless css" />
+    <MESSAGE value="content wrapper style" />
+    <MESSAGE value="add Google Material Icon and complete menu and header" />
+    <MESSAGE value="change FontAwesome and complete Footer" />
+    <MESSAGE value="add vanta js &amp; three, test in a div" />
+    <MESSAGE value="css of home" />
+    <MESSAGE value="home page completed" />
+    <MESSAGE value="about page style" />
+    <MESSAGE value="basic dummy timeline setup for experience and education" />
+    <MESSAGE value="about page is ready" />
+    <MESSAGE value="contact page styling" />
+    <MESSAGE value="contact page fetch onclick send" />
+    <option name="LAST_COMMIT_MESSAGE" value="contact page fetch onclick send" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
