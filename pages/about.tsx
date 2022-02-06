@@ -1,6 +1,7 @@
 import type {NextPage} from "next";
 import Layout from "../components/Layout";
 import styles from "../styles/About.module.css";
+import stylesTimeline from "../styles/Timeline.module.css";
 import Head from "next/head";
 
 const About: NextPage = () => {
@@ -47,6 +48,62 @@ const About: NextPage = () => {
                         <img src="assets/tech-stack/jquery.png" />
                     </div>
                 </div>
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+                <ul className={stylesTimeline.timeline}>
+                    {/*Item 1*/}
+                    <li>
+                        <div className={stylesTimeline.directionR}>
+                            <div className={stylesTimeline.flagWrapper}>
+                                <span className={stylesTimeline.hexa}></span>
+                                <span className={stylesTimeline.flag}>Lorem ipsum.</span>
+                                <span className={stylesTimeline.timeWrapper}>
+                                    <span className={stylesTimeline.time}>Feb 2015</span>
+                                </span>
+                            </div>
+                            <div className={stylesTimeline.desc}>
+                                Lorem ipsum Nisi labore aute do aute culpa magna nulla voluptate exercitation deserunt
+                                proident.
+                            </div>
+                        </div>
+                    </li>
+
+                    {/*Item 2*/}
+                    <li>
+                        <div className={stylesTimeline.directionL}>
+                            <div className={stylesTimeline.flagWrapper}>
+                                <span className={stylesTimeline.hexa}></span>
+                                <span className={stylesTimeline.flag}>Lorem ipsum.</span>
+                                <span className={stylesTimeline.timeWrapper}>
+                                    <span className={stylesTimeline.time}>Feb 2015</span>
+                                </span>
+                            </div>
+                            <div className={stylesTimeline.desc}>
+                                Lorem ipsum Nisi labore aute do aute culpa magna nulla voluptate exercitation deserunt
+                                proident.
+                            </div>
+                        </div>
+                    </li>
+
+                    {/*Item 3*/}
+                    <li>
+                        <div className={stylesTimeline.directionR}>
+                            <div className={stylesTimeline.flagWrapper}>
+                                <span className={stylesTimeline.hexa}></span>
+                                <span className={stylesTimeline.flag}>Lorem ipsum.</span>
+                                <span className={stylesTimeline.timeWrapper}>
+                                    <span className={stylesTimeline.time}>Feb 2015</span>
+                                </span>
+                            </div>
+                            <div className={stylesTimeline.desc}>
+                                Lorem ipsum Nisi labore aute do aute culpa magna nulla voluptate exercitation deserunt
+                                proident.
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </section>
 
             <section>

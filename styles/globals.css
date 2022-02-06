@@ -145,6 +145,7 @@ Menu & Hamburger Menu
   width: 100%;
   border-top: 0.6rem solid var(--blueOfLogo);
   box-shadow: 1px 1px 5px 0px #ECEFF1;
+  z-index:20;
 }
 
 /* Logo */
