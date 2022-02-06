@@ -7,16 +7,12 @@ const ThemeChangerButton = () => {
         <>
             {theme && theme === "light" && (
                 <button className="iconBtn" onClick={() => setTheme("dark")}>
-                    <span className="material-icons">
-                        &#xe51c;
-                    </span>
+                    <i className="fa fa-moon"></i>
                 </button>
             )}
             {theme && theme === "dark" && (
                 <button className="iconBtn" onClick={() => setTheme("light")}>
-                    <span className="material-icons">
-                        &#xe518;
-                    </span>
+                    <i className="fa fa-lightbulb"></i>
                 </button>
             )}
         </>

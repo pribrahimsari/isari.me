@@ -88,14 +88,24 @@ a {
 
 .footer-wrapper {
   text-align: center;
-  margin-top: 4rem;
+  margin: 1rem 0;
+  padding:0 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .copyright {
-  margin-bottom: 20px;
   font-size: 1rem;
+}
+.copyright a:hover{
+  color:var(--blueOfLogo);
+}
+.social-links a{
+  margin: 0 0.6rem;
+  font-size: 1.3rem;
+}
+.social-links a:hover{
+  color:var(--blueOfLogo);
 }
 
 
