@@ -5,12 +5,12 @@
     flex-wrap: wrap;
 }
 .card {
-    margin: 10px;
+    margin: 0 3rem 4rem 0;
     background-color: var(--workscardbg);
     border-radius: 10px;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 20px rgb(0 0 0 / 20%);
     overflow: hidden;
-    width: 300px;
+    width: 345px;
 }
 .cardHeader{
     position:relative;
@@ -76,13 +76,38 @@
     width: 100%;
     justify-content: space-evenly;
 }
-
-.buttons img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+.buttons a{
+    padding: 0.45rem;
+    font-size: 0.77rem;
 }
+
+.btnGreen{
+    background-color: rgb(46, 125, 50);
+}
+.btnGreen:hover{
+    background-color: rgb(27, 94, 32);
+}
+
+.btnGray{
+    background-color: #6c757d;
+}
+.btnGray:hover{
+    background-color: #5a6268;
+}
+
+.btnLightBlue{
+    background-color: #17a2b8;
+}
+.btnLightBlue:hover{
+    background-color: #138496;
+}
+
+/*.buttons img {*/
+/*    border-radius: 50%;*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*    margin-right: 10px;*/
+/*}*/
 .userInfo h5 {
     margin: 0;
 }

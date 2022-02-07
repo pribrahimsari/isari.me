@@ -3,6 +3,10 @@ import Layout from "../components/Layout";
 import styles from "../styles/Works.module.css";
 import stylesCard from "../styles/Workscard.module.css";
 import Head from "next/head";
+import {useState} from "react";
+//@ts-ignore //todo: type definition
+import FsLightbox from "fslightbox-react";
+import Link from "next/link";
 
 const Works: NextPage = () => {
     const myWorks = [
@@ -328,13 +332,33 @@ const Works: NextPage = () => {
                                     <p>{work.description}</p>
                                     <div className={stylesCard.buttons}>
                                         {work.screenShots && work.screenShots.length > 0 && (
-                                            <button className="btn">ScreenShots</button>
+                                            <LightBox images={work.screenShots} />
                                         )}
-                                        {work.currentLink && <button className="btn">View</button>}
-                                        {work.cloneLink && <button className="btn">View Clone</button>}
-                                        {work.webArchiveLink && <button className="btn">Archive</button>}
-                                        {/*todo: a react lightbox plugin for ss s */}
-                                        {/*todo: currentLink | cloneLink ona göre view clone veya view actual*/}
+                                        {work.currentLink && (
+                                            <Link href={work.currentLink} passHref>
+                                                <a target="_blank" className={`btn ${stylesCard.btnGreen}`}>
+                                                    <i className="fas fa-link"></i> View
+                                                </a>
+                                            </Link>
+                                        )}
+                                        {work.cloneLink && (
+                                            <Link href={work.cloneLink} passHref>
+                                                <a target="_blank" className={`btn ${stylesCard.btnLightBlue}`}>
+                                                    <i className="far fa-clone"></i> View Clone
+                                                </a>
+                                            </Link>
+                                        )}
+                                        {work.webArchiveLink && (
+                                            <Link href={work.webArchiveLink} passHref>
+                                                <a target="_blank" className={`btn ${stylesCard.btnGray}`}>
+                                                    <i className="fas fa-history"></i> Web Archive
+                                                </a>
+                                            </Link>
+                                        )}
+                                        {/*
+                                        todo:
+                                        - header images
+                                        */}
                                     </div>
                                 </div>
                             </div>
@@ -342,6 +366,19 @@ const Works: NextPage = () => {
                 </div>
             </div>
         </Layout>
+    );
+};
+
+const LightBox = ({images}: {images: string[]}) => {
+    const [toggler, setToggler] = useState(false);
+
+    return (
+        <>
+            <a className="btn" onClick={() => setToggler(!toggler)}>
+                <i className="fas fa-camera-retro"></i> ScreenShots
+            </a>
+            <FsLightbox toggler={toggler} sources={images} type="image" />
+        </>
     );
 };
 
