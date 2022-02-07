@@ -4,7 +4,6 @@ import styles from "../styles/Works.module.css";
 import stylesCard from "../styles/Workscard.module.css";
 import Head from "next/head";
 import {useState} from "react";
-//@ts-ignore //todo: type definition
 import FsLightbox from "fslightbox-react";
 import Link from "next/link";
 
@@ -355,10 +354,6 @@ const Works: NextPage = () => {
                                                 </a>
                                             </Link>
                                         )}
-                                        {/*
-                                        todo:
-                                        - header images
-                                        */}
                                     </div>
                                 </div>
                             </div>
