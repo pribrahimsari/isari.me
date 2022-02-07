@@ -126,7 +126,7 @@ const About: NextPage = () => {
                             7 countries
                         </RoughNotation>{" "}
                         so far. I can{" "}
-                        <RoughNotation type="highlight" color="#ffd54f" show animationDelay={4000}>
+                        <RoughNotation type="highlight" color="#c89903" show animationDelay={4000}>
                             communicate in both English and Turkish
                         </RoughNotation>{" "}
                         languages.

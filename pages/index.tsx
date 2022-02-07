@@ -69,7 +69,7 @@ const Home: NextPage = () => {
                 <div className={styles.heroTexts}>
                     <motion.h1 initial={{opacity: 0, x: -80}} animate={{opacity: 1, x: 0}} transition={{delay: 0.3}}>
                         Hi, I'm &nbsp;
-                        <RoughNotation type="highlight" color="#ffd54f" show animationDelay={1000}>
+                        <RoughNotation type="highlight" color="#c89903" show animationDelay={1000}>
                             İbrahim
                         </RoughNotation>
                         .
