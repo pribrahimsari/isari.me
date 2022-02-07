@@ -14,8 +14,8 @@ const Works: NextPage = () => {
             description: "",
             screenShots: ["", ""],
             currentLink: "",
+            cloneLink: "",
             webArchiveLink: "",
-            mobileLink: "",
         },
     ];
 
@@ -43,9 +43,9 @@ const Works: NextPage = () => {
                             <h4>Why is the Tesla Cybertruck designed the way it is?</h4>
                             <p>An exploration into the truck's polarising design</p>
                             <div className={stylesCard.buttons}>
-                                <button className="btn">View Clone</button>
-                                <button className="btn">Web Archive</button>
-                                <button className="btn">Mobile</button>
+                                <button className="btn">View Clone</button> {/*todo: currentLink | cloneLink ona göre view clone veya view actual*/}
+                                <button className="btn">ScreenShots</button>
+                                <button className="btn">Archive</button>
                             </div>
                         </div>
                     </div>
