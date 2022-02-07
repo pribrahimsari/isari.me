@@ -12,19 +12,43 @@
     overflow: hidden;
     width: 345px;
 }
+@media(max-width: 725px) {
+    .card {
+        margin: 0 0 2rem 0;
+    }
+}
+
 .cardHeader{
     position:relative;
 }
 .cardHeader .yearTag{
     position: absolute;
-    top:1rem;
-    left:1rem
+    top: 0rem;
+    left: 0rem;
+    border-radius: 0;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.9rem;
+    margin: 0;
 }
 .cardHeader img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
+
+/*EFFECT*/
+.cardHeader img{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.cardHeader:hover img{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+/*EFFECT*/
+
 .cardBody {
     display: flex;
     flex-direction: column;
@@ -32,6 +56,7 @@
     align-items: flex-start;
     padding: 0.6rem;
     min-height: 220px;
+    position:relative;
 }
 
 .cardBody h4{
