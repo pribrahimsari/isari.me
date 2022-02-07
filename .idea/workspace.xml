@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f18aa03-b840-4c78-a256-fb005eba53d3" name="Changes" comment="contact page fetch onclick send">
-      <change afterPath="$PROJECT_DIR$/styles/Workscard.module.css" afterDir="false" />
+    <list default="true" id="4f18aa03-b840-4c78-a256-fb005eba53d3" name="Changes" comment="works page dummy card style">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/works.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/works.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/Works.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Works.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
-    <list id="45e08d81-ad30-4666-afe0-08e0bcde55ea" name="do not commit" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list id="45e08d81-ad30-4666-afe0-08e0bcde55ea" name="do not commit" comment="do not commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,23 +17,6 @@
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="e728db13-3e8f-45ec-8929-13d003c36624" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/.idea/workspace.xml">
-      <ranges>
-        <range start1="3" end1="4" start2="3" end2="5" changelist="4f18aa03-b840-4c78-a256-fb005eba53d3" />
-        <range start1="5" end1="5" start2="6" end2="8" changelist="4f18aa03-b840-4c78-a256-fb005eba53d3" />
-        <range start1="6" end1="6" start2="9" end2="12" changelist="4f18aa03-b840-4c78-a256-fb005eba53d3" />
-        <range start1="14" end1="14" start2="20" end2="21" changelist="4f18aa03-b840-4c78-a256-fb005eba53d3" />
-        <range start1="17" end1="17" start2="24" end2="48" changelist="4f18aa03-b840-4c78-a256-fb005eba53d3" />
-        <range start1="19" end1="20" start2="50" end2="59" changelist="4f18aa03-b840-4c78-a256-fb005eba53d3" />
-        <range start1="21" end1="21" start2="60" end2="84" changelist="4f18aa03-b840-4c78-a256-fb005eba53d3" />
-        <range start1="22" end1="22" start2="85" end2="86" changelist="4f18aa03-b840-4c78-a256-fb005eba53d3" />
-        <range start1="44" end1="45" start2="108" end2="195" changelist="4f18aa03-b840-4c78-a256-fb005eba53d3" />
-        <range start1="47" end1="47" start2="197" end2="200" changelist="45e08d81-ad30-4666-afe0-08e0bcde55ea" />
-        <range start1="62" end1="63" start2="215" end2="231" changelist="45e08d81-ad30-4666-afe0-08e0bcde55ea" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -149,7 +127,7 @@
       <option name="presentableId" value="Default" />
       <updated>1644150357740</updated>
       <workItem from="1644150359197" duration="13676000" />
-      <workItem from="1644169857465" duration="17016000" />
+      <workItem from="1644169857465" duration="17556000" />
     </task>
     <task id="LOCAL-00009" summary="home page completed">
       <created>1644157519139</created>
@@ -193,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644182330039</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="works page dummy card style">
+      <created>1644191905010</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1644191905010</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +210,8 @@
     <MESSAGE value="about page is ready" />
     <MESSAGE value="contact page styling" />
     <MESSAGE value="contact page fetch onclick send" />
-    <option name="LAST_COMMIT_MESSAGE" value="contact page fetch onclick send" />
+    <MESSAGE value="works page dummy card style" />
+    <option name="LAST_COMMIT_MESSAGE" value="works page dummy card style" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

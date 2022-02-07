@@ -15,12 +15,24 @@ const Home: NextPage = () => {
 
     useEffect(() => {
         if (!vantaEffect) {
-            setVantaEffect(
-                CLOUDS({
-                    el: vantaRef.current,
-                    THREE,
-                }),
-            );
+            if (theme === "dark") {
+                setVantaEffect(
+                    CLOUDS({
+                        el: vantaRef.current,
+                        THREE,
+                        skyColor: 0x4202d,
+                        cloudColor: 0x7d7d7d,
+                        sunColor: 0x8c8c8c,
+                    }),
+                );
+            } else {
+                setVantaEffect(
+                    CLOUDS({
+                        el: vantaRef.current,
+                        THREE,
+                    }),
+                );
+            }
         }
         return () => {
             //@ts-ignore
