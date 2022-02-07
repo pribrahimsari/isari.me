@@ -109,9 +109,7 @@ const About: NextPage = () => {
                             </RoughNotation>
                             .
                         </p>
-                        <p>
-                            👨‍💻 I love making somethings work, learning and teaching.
-                        </p>
+                        <p>👨‍💻 I love making somethings work, learning and teaching.</p>
                         <p>
                             🎤 I have been to{" "}
                             <RoughNotation type="underline" color="#b71c1c">
@@ -218,7 +216,7 @@ const About: NextPage = () => {
                 </ul>
             </section>
             <section className={styles.aboutPageSection}>
-                <Link href="cv-ibrahim-sari-2022.pdf">
+                <Link href="/cv-ibrahim-sari-2022.pdf">
                     <a target="_blank">
                         <button className="btn">
                             <i className="fa fa-download"></i> &nbsp; Download my CV

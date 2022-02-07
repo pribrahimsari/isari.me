@@ -1,5 +1,7 @@
 import Link from "next/link";
-import ThemeChangerButton from "./ThemeChangerButton";
+import dynamic from "next/dynamic";
+
+const DynamicThemeChangerButton = dynamic(() => import("./ThemeChangerButton"), {ssr: false});
 
 const Menu = () => (
     <nav className="nav">
@@ -25,7 +27,7 @@ const Menu = () => (
                 </Link>
             </li>
             <li>
-                <ThemeChangerButton />
+                <DynamicThemeChangerButton />
             </li>
         </ul>
     </nav>
