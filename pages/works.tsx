@@ -334,25 +334,34 @@ const Works: NextPage = () => {
                                             <LightBox images={work.screenShots} />
                                         )}
                                         {work.currentLink && (
-                                            <Link href={work.currentLink} passHref>
-                                                <a target="_blank" className={`btn ${stylesCard.btnGreen}`}>
-                                                    <i className="fas fa-link"></i> View
-                                                </a>
-                                            </Link>
+                                            <a
+                                                href={work.currentLink}
+                                                rel="noreferrer"
+                                                target="_blank"
+                                                className={`btn ${stylesCard.btnGreen}`}
+                                            >
+                                                <i className="fas fa-link"></i> View
+                                            </a>
                                         )}
                                         {work.cloneLink && (
-                                            <Link href={work.cloneLink} passHref>
-                                                <a target="_blank" className={`btn ${stylesCard.btnLightBlue}`}>
-                                                    <i className="far fa-clone"></i> View Clone
-                                                </a>
-                                            </Link>
+                                            <a
+                                                href={work.cloneLink}
+                                                rel="noreferrer"
+                                                target="_blank"
+                                                className={`btn ${stylesCard.btnLightBlue}`}
+                                            >
+                                                <i className="far fa-clone"></i> View Clone
+                                            </a>
                                         )}
                                         {work.webArchiveLink && (
-                                            <Link href={work.webArchiveLink} passHref>
-                                                <a target="_blank" className={`btn ${stylesCard.btnGray}`}>
-                                                    <i className="fas fa-history"></i> Web Archive
-                                                </a>
-                                            </Link>
+                                            <a
+                                                href={work.webArchiveLink}
+                                                rel="noreferrer"
+                                                target="_blank"
+                                                className={`btn ${stylesCard.btnGray}`}
+                                            >
+                                                <i className="fas fa-history"></i> Web Archive
+                                            </a>
                                         )}
                                     </div>
                                 </div>
