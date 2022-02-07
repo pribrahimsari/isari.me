@@ -7,6 +7,8 @@ import * as THREE from "three";
 //@ts-ignore //vanta type definitions not available
 import CLOUDS from "vanta/dist/vanta.clouds.min";
 import {useTheme} from "next-themes";
+import {RoughNotation, RoughNotationGroup} from "react-rough-notation";
+
 
 const Home: NextPage = () => {
     const [vantaEffect, setVantaEffect] = useState(0);
@@ -65,8 +67,12 @@ const Home: NextPage = () => {
             <div className={styles.vantaBackground} ref={vantaRef}></div>
             <section className={styles.heroSection}>
                 <div className={styles.heroTexts}>
-                    <h1>Hi, I'm İbrahim.</h1>
-                    <h2>Web Developer based on Istanbul, TURKEY</h2>
+                    <RoughNotationGroup show={true}>
+                        <h1>Hi, I'm &nbsp;
+                            <RoughNotation type="highlight" color="#ffd54f">İbrahim</RoughNotation>.
+                        </h1>
+                        <h2>Web Developer based on <RoughNotation type="underline" color="#b71c1c">Istanbul,</RoughNotation> TURKEY</h2>
+                    </RoughNotationGroup>
                     <div>
                         <Link href="/about">
                             <a target="_self">

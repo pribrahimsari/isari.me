@@ -4,6 +4,7 @@ import styles from "../styles/About.module.css";
 import stylesTimeline from "../styles/Timeline.module.css";
 import Head from "next/head";
 import Link from "next/link";
+import {RoughNotation, RoughNotationGroup} from "react-rough-notation";
 
 const About: NextPage = () => {
     const experienceData = [
@@ -100,17 +101,38 @@ const About: NextPage = () => {
                     </div>
                 </div>
                 <div>
-                    <p>👶 Borned in 1989. I am {new Date().getFullYear() - 1989}.</p>
-                    <p>👨‍💻 I love making somethings work, learning and teaching.</p>
-                    <p>
-                        🎤 I have been to 7 countries so far. I can communicate in both English and Turkish languages.
-                    </p>
-                    <p>
-                        ⚙️I had opportunity to work with many kinds of people and teams. I've no problem with team
-                        cohesion, as I love teaching or learning new things.
-                    </p>
-                    <p>👨‍👩‍👦‍👦 A husband and father.</p>
-                    {/* todo: other details <p>about me text instructions</p>*/}
+                    <RoughNotationGroup show={true}>
+                        <p>
+                            👶 Borned in 1989.{" "}
+                            <RoughNotation type="underline" color="#b71c1c">
+                                I am {new Date().getFullYear() - 1989}
+                            </RoughNotation>
+                            .
+                        </p>
+                        <p>
+                            👨‍💻 I love making somethings work, learning and teaching.
+                        </p>
+                        <p>
+                            🎤 I have been to{" "}
+                            <RoughNotation type="underline" color="#b71c1c">
+                                7 countries
+                            </RoughNotation>{" "}
+                            so far. I can{" "}
+                            <RoughNotation type="highlight" color="#ffd54f">
+                                communicate in both English and Turkish
+                            </RoughNotation>{" "}
+                            languages.
+                        </p>
+                        <p>
+                            ⚙️I had opportunity to work with many kinds of people and teams. I've{" "}
+                            <RoughNotation type="underline" color="#b71c1c">
+                                no problem with team cohesion
+                            </RoughNotation>
+                            , as I love teaching or learning new things.
+                        </p>
+                        <p>👨‍👩‍👦‍👦 A husband and father.</p>
+                        {/* todo: other details <p>about me text instructions</p>*/}
+                    </RoughNotationGroup>
                 </div>
                 <div className={styles.techStack}>
                     <h2>Tech Stack</h2>
