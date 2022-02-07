@@ -4,7 +4,8 @@ import styles from "../styles/About.module.css";
 import stylesTimeline from "../styles/Timeline.module.css";
 import Head from "next/head";
 import Link from "next/link";
-import {RoughNotation, RoughNotationGroup} from "react-rough-notation";
+import {RoughNotation} from "react-rough-notation";
+import {motion} from "framer-motion";
 
 const About: NextPage = () => {
     const experienceData = [
@@ -92,65 +93,93 @@ const About: NextPage = () => {
             </Head>
             <section>
                 <div className={styles.aboutPageTitleDiv}>
-                    <div className={styles.circularLandscape}>
+                    <motion.div
+                        className={styles.circularLandscape}
+                        initial={{scale: 0}}
+                        animate={{scale: 1}}
+                        transition={{delay: 0.3}}
+                    >
                         <img src="hero-profile.jpg" alt="my picture" />
-                    </div>
-                    <div className={styles.aboutPageTitleTexts}>
+                    </motion.div>
+                    <motion.div
+                        className={styles.aboutPageTitleTexts}
+                        initial={{scale: 0}}
+                        animate={{scale: 1}}
+                        transition={{delay: 0.5}}
+                    >
                         <h2>İbrahim SARI</h2>
                         <h4>Web Developer based on Istanbul, TURKEY</h4>
-                    </div>
+                    </motion.div>
                 </div>
-                <div>
-                    <RoughNotationGroup show={true}>
-                        <p>
-                            👶 Borned in 1989.{" "}
-                            <RoughNotation type="underline" color="#b71c1c">
-                                I am {new Date().getFullYear() - 1989}
-                            </RoughNotation>
-                            .
-                        </p>
-                        <p>👨‍💻 I love making somethings work, learning and teaching.</p>
-                        <p>
-                            🎤 I have been to{" "}
-                            <RoughNotation type="underline" color="#b71c1c">
-                                7 countries
-                            </RoughNotation>{" "}
-                            so far. I can{" "}
-                            <RoughNotation type="highlight" color="#ffd54f">
-                                communicate in both English and Turkish
-                            </RoughNotation>{" "}
-                            languages.
-                        </p>
-                        <p>
-                            ⚙️I had opportunity to work with many kinds of people and teams. I've{" "}
-                            <RoughNotation type="underline" color="#b71c1c">
-                                no problem with team cohesion
-                            </RoughNotation>
-                            , as I love teaching or learning new things.
-                        </p>
-                        <p>👨‍👩‍👦‍👦 A husband and father.</p>
-                        {/* todo: other details <p>about me text instructions</p>*/}
-                    </RoughNotationGroup>
-                </div>
-                <div className={styles.techStack}>
+                <motion.div initial={{opacity: 0, y: -50}} animate={{opacity: 1, y: 0}} transition={{delay: 0.7}}>
+                    <p>
+                        👶 Borned in 1989.{" "}
+                        <RoughNotation type="underline" color="#b71c1c" show animationDelay={2000}>
+                            I am {new Date().getFullYear() - 1989}
+                        </RoughNotation>
+                        .
+                    </p>
+                    <p>👨‍💻 I love making somethings work, learning and teaching.</p>
+                    <p>
+                        🎤 I have been to{" "}
+                        <RoughNotation type="underline" color="#b71c1c" show animationDelay={3500}>
+                            7 countries
+                        </RoughNotation>{" "}
+                        so far. I can{" "}
+                        <RoughNotation type="highlight" color="#ffd54f" show animationDelay={4000}>
+                            communicate in both English and Turkish
+                        </RoughNotation>{" "}
+                        languages.
+                    </p>
+                    <p>
+                        ⚙️I had opportunity to work with many kinds of people and teams. I've{" "}
+                        <RoughNotation type="underline" color="#b71c1c" show animationDelay={5000}>
+                            no problem with team cohesion
+                        </RoughNotation>
+                        , as I love teaching or learning new things.
+                    </p>
+                    <p>👨‍👩‍👦‍👦 A husband and father.</p>
+                    {/* todo: other details <p>about me text instructions</p>*/}
+                </motion.div>
+                <motion.div
+                    className={styles.techStack}
+                    initial={{opacity: 0, y: -50}}
+                    animate={{opacity: 1, y: 0}}
+                    transition={{delay: 0.9}}
+                >
                     <h2>Tech Stack</h2>
                     <div>
-                        <img src="assets/tech-stack/react.png" />
-                        <img src="assets/tech-stack/javascript.png" />
-                        <img src="assets/tech-stack/typescript.png" />
-                        <img src="assets/tech-stack/git.png" />
-                        <img src="assets/tech-stack/html.jpg" />
-                        <img src="assets/tech-stack/css.jpg" />
-                        <img src="assets/tech-stack/php.png" />
-                        <img src="assets/tech-stack/codeigniter.jpg" />
-                        <img src="assets/tech-stack/laravel.png" />
-                        <img src="assets/tech-stack/mysql.png" />
-                        <img src="assets/tech-stack/jquery.png" />
+                        {[
+                            "react.png",
+                            "javascript.png",
+                            "typescript.png",
+                            "git.png",
+                            "html.jpg",
+                            "css.jpg",
+                            "php.png",
+                            "codeigniter.jpg",
+                            "laravel.png",
+                            "mysql.png",
+                            "jquery.png",
+                        ].map((tech, i) => (
+                            <motion.img
+                                src={`assets/tech-stack/${tech}`}
+                                alt={tech}
+                                key={i}
+                                whileHover={{scale: 1.1}}
+                            />
+                        ))}
                     </div>
-                </div>
+                </motion.div>
             </section>
 
-            <section className={styles.aboutPageSection} style={{width: "100%"}}>
+            <motion.section
+                className={styles.aboutPageSection}
+                style={{width: "100%"}}
+                initial={{opacity: 0, y: -50}}
+                animate={{opacity: 1, y: 0}}
+                transition={{delay: 1}}
+            >
                 <h2>Experience</h2>
                 <p>Learning and coding are parts of my whole carrier.</p>
                 <ul className={stylesTimeline.timeline}>
@@ -183,9 +212,14 @@ const About: NextPage = () => {
                             </li>
                         ))}
                 </ul>
-            </section>
+            </motion.section>
 
-            <section className={styles.aboutPageSection}>
+            <motion.section
+                className={styles.aboutPageSection}
+                initial={{opacity: 0, y: -50}}
+                animate={{opacity: 1, y: 0}}
+                transition={{delay: 1.1}}
+            >
                 <h2>Education</h2>
                 <p>I am completely self-taught, passioned and studious. Here are my all graduations:</p>
                 <ul className={stylesTimeline.timeline}>
@@ -214,7 +248,7 @@ const About: NextPage = () => {
                             </li>
                         ))}
                 </ul>
-            </section>
+            </motion.section>
             <section className={styles.aboutPageSection}>
                 <Link href="/cv-ibrahim-sari-2022.pdf">
                     <a target="_blank">

@@ -7,8 +7,8 @@ import * as THREE from "three";
 //@ts-ignore //vanta type definitions not available
 import CLOUDS from "vanta/dist/vanta.clouds.min";
 import {useTheme} from "next-themes";
-import {RoughNotation, RoughNotationGroup} from "react-rough-notation";
-
+import {RoughNotation} from "react-rough-notation";
+import {motion} from "framer-motion";
 
 const Home: NextPage = () => {
     const [vantaEffect, setVantaEffect] = useState(0);
@@ -67,13 +67,21 @@ const Home: NextPage = () => {
             <div className={styles.vantaBackground} ref={vantaRef}></div>
             <section className={styles.heroSection}>
                 <div className={styles.heroTexts}>
-                    <RoughNotationGroup show={true}>
-                        <h1>Hi, I'm &nbsp;
-                            <RoughNotation type="highlight" color="#ffd54f">İbrahim</RoughNotation>.
-                        </h1>
-                        <h2>Web Developer based on <RoughNotation type="underline" color="#b71c1c">Istanbul,</RoughNotation> TURKEY</h2>
-                    </RoughNotationGroup>
-                    <div>
+                    <motion.h1 initial={{opacity: 0, x: -80}} animate={{opacity: 1, x: 0}} transition={{delay: 0.3}}>
+                        Hi, I'm &nbsp;
+                        <RoughNotation type="highlight" color="#ffd54f" show animationDelay={1000}>
+                            İbrahim
+                        </RoughNotation>
+                        .
+                    </motion.h1>
+                    <motion.h2 initial={{opacity: 0, x: -80}} animate={{opacity: 1, x: 0}} transition={{delay: 0.5}}>
+                        Web Developer based on{" "}
+                        <RoughNotation type="underline" color="#b71c1c" show animationDelay={2000}>
+                            Istanbul,
+                        </RoughNotation>{" "}
+                        TURKEY
+                    </motion.h2>
+                    <motion.div initial={{opacity: 0, y: 80}} animate={{opacity: 1, y: 0}} transition={{delay: 0.8}}>
                         <Link href="/about">
                             <a target="_self">
                                 <button className="btn">
@@ -82,17 +90,24 @@ const Home: NextPage = () => {
                             </a>
                         </Link>
 
-                        <Link href="cv-ibrahim-sari-2022.pdf">
+                        <Link href="/cv-ibrahim-sari-2022.pdf">
                             <a target="_blank">
                                 <button className="btn">
                                     <i className="fa fa-download"></i> &nbsp; Download my CV
                                 </button>
                             </a>
                         </Link>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className={styles.circularLandscape}>
-                    <img src="hero-profile.jpg" width="250px" alt="my picture" />
+                    <motion.img
+                        src="hero-profile.jpg"
+                        width="250px"
+                        alt="my picture"
+                        initial={{opacity: 0, x: 80}}
+                        animate={{opacity: 1, x: 0}}
+                        transition={{delay: 0.3}}
+                    />
                 </div>
             </section>
         </Layout>

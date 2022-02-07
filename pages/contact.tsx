@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import styles from "../styles/Contact.module.css";
 import Head from "next/head";
 import {useState} from "react";
+import {motion} from "framer-motion";
 
 const Contact: NextPage = () => {
     const [showMail, setShowMail] = useState(false);
@@ -101,9 +102,16 @@ const Contact: NextPage = () => {
             </Head>
             <section>
                 <h1>Contact</h1>
-                <p>👋 I always check my mails. Please do not hesitate to send me a message in English or Turkish.</p>
+                <motion.p initial={{opacity: 0, y: -50}} animate={{opacity: 1, y: 0}} transition={{delay: 0.2}}>
+                    👋 I always check my mails. Please do not hesitate to send me a message in English or Turkish.
+                </motion.p>
 
-                <div className={styles.contactWrapper}>
+                <motion.div
+                    className={styles.contactWrapper}
+                    initial={{opacity: 0, y: 50}}
+                    animate={{opacity: 1, y: 0}}
+                    transition={{delay: 0.4}}
+                >
                     <div className={styles.contactInfo}>
                         <div>
                             <i className="fa fa-envelope"></i> &nbsp;{" "}
@@ -194,7 +202,7 @@ const Contact: NextPage = () => {
                             )}
                         </div>
                     </form>
-                </div>
+                </motion.div>
 
                 {/*todo: google captcha */}
             </section>

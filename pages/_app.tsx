@@ -2,8 +2,9 @@ import "../styles/globals.css";
 import type {AppProps} from "next/app";
 import {ThemeProvider} from "next-themes";
 import {useEffect} from "react";
+import {motion} from "framer-motion";
 
-function MyApp({Component, pageProps}: AppProps) {
+function MyApp({Component, pageProps, router}: AppProps) {
     useEffect(() => {
         const threeScript = document.createElement("script");
         threeScript.setAttribute("id", "threeScript");
@@ -17,7 +18,9 @@ function MyApp({Component, pageProps}: AppProps) {
     }, []);
     return (
         <ThemeProvider defaultTheme="light">
-            <Component {...pageProps} />
+            <motion.div key={router.route} exit={{opacity: 0}} initial={{opacity: 0}} animate={{opacity: 1}}>
+                <Component {...pageProps} />
+            </motion.div>
         </ThemeProvider>
     );
 }

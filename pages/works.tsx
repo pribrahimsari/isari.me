@@ -5,7 +5,7 @@ import stylesCard from "../styles/Workscard.module.css";
 import Head from "next/head";
 import {useState} from "react";
 import FsLightbox from "fslightbox-react";
-import Link from "next/link";
+import {motion} from "framer-motion";
 
 const Works: NextPage = () => {
     const myWorks = [
@@ -299,7 +299,13 @@ const Works: NextPage = () => {
                     {myWorks &&
                         myWorks.length > 0 &&
                         myWorks.map((work, i) => (
-                            <div key={i} className={stylesCard.card}>
+                            <motion.div
+                                key={i}
+                                className={stylesCard.card}
+                                initial={{scale: 0.7, opacity: 0}}
+                                animate={{scale: 1, opacity: 1}}
+                                transition={{delay: i / 10}}
+                            >
                                 <div className={stylesCard.cardHeader}>
                                     <img src={work.headerImage} alt={work.title} />
                                     <span className={`${stylesCard.yearTag} ${stylesCard.tag} ${stylesCard.tagBlue}`}>
@@ -365,7 +371,7 @@ const Works: NextPage = () => {
                                         )}
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                         ))}
                 </div>
             </div>
