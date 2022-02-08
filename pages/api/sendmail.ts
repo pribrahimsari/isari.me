@@ -1,7 +1,26 @@
 import sendgrid from "@sendgrid/mail";
 
-//@ts-ignore
-async function sendEmail(req, res) {
+type sendEmailRequest = {
+    body: {
+        name: string;
+        email: string;
+        subject: string;
+        message: string;
+    };
+};
+
+type sendEmailResponse = {
+    status: (arg0: number) => {
+        (): any;
+        new (): any;
+        json: {
+            (arg0: {success?: [sendgrid.ClientResponse, {}]; error?: any}): any;
+            new (): any;
+        };
+    };
+};
+
+async function sendEmail(req: sendEmailRequest, res: sendEmailResponse) {
     //get sendgrid api key
     process.env.SENDGRID_API_KEY && sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
@@ -26,9 +45,7 @@ async function sendEmail(req, res) {
             return res.status(response[0].statusCode).json({success: response});
         })
         .catch((error) => {
-            // @ts-ignore
             console.error("Sendgrid.send ERROR: ", error);
-            // @ts-ignore
             return res.status(error.statusCode || 500).json({error: error});
         });
 }
