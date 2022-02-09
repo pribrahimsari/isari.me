@@ -139,7 +139,6 @@ const About: NextPage = () => {
                         , as I love teaching or learning new things.
                     </p>
                     <p>👨‍👩‍👦‍👦 A husband and father.</p>
-                    {/* todo: other details <p>about me text instructions</p>*/}
                 </motion.div>
                 <motion.div
                     className={styles.techStack}
