@@ -10,15 +10,30 @@ import {motion} from "framer-motion";
 const Works: NextPage = () => {
     const myWorks = [
         {
+            //My Portfolio
+            title: "My Personal Portfolio Website",
+            year: "2022",
+            headerImage: "https://works.isari.me/isari-me/header.jpg",
+            techs: ["React", "TypeScript", "Pure CSS"],
+            description:
+                "Re-designed my personal portfolio website from scratch with actual techs. " +
+                "Fully responsive, dark/light theme support, used Framer-Motion, Rough-Notation and VantaJS for animations. " +
+                "Vercel for deployment with my personal domain.",
+            //screenShots: [""],
+            //currentLink: "",
+            //cloneLink: "",
+            //webArchiveLink: "",
+        },
+        {
             //CRM
-            title: "CRM (Customer Relationship Management) | Custom Software",
+            title: "CRM (Customer Relationship Management)",
             year: "2018 - 2022",
             headerImage: "https://works.isari.me/crm/header.jpg",
             techs: ["Laravel", "PHP, MySQL", "jQuery, Mobile"],
             description:
-                "Completely developed by me for my customer's spesific requirements. DB design, backend and frontend were developed by me. " +
-                "Some modules such as 'Activities' have mobile support also. " +
-                "Still in use, but customer wants to remain anonymous.",
+                "Completely developed from scratch by me for my customer's specific requirements. " +
+                "DB design, backend and frontend were developed by me. " +
+                "Some modules such as 'Activities' have mobile support also. Still in use.",
             screenShots: [
                 "https://works.isari.me/crm/ss2.jpg",
                 "https://works.isari.me/crm/ss3.jpg",
@@ -40,12 +55,12 @@ const Works: NextPage = () => {
             title: "Wedding Invitation | Personal Project",
             year: "2013",
             headerImage: "https://works.isari.me/wedding-invite/website/header.jpg",
-            techs: ["CodeIgniter", "PHP", "jQuery", "MySQL"],
+            techs: ["CodeIgniter", "LAMP Stack", "jQuery"],
             description:
                 "I got married in 2013. In invitation card of our ceremony, we used QR codes embedded with the link of this project. " +
                 "All invitees shared their regards using contact form and we published them at cine-vision to all guests during the ceremony. " +
                 "Beside this, invitees could find location address by using this website. " +
-                "I used parallax effects on this project. Mobile version is also available. ",
+                "I used parallax effects on this project. Mobile version is also available.",
             screenShots: [
                 "https://works.isari.me/wedding-invite/website/site1.jpg",
                 "https://works.isari.me/wedding-invite/website/site2.jpg",
@@ -108,7 +123,7 @@ const Works: NextPage = () => {
             headerImage: "https://works.isari.me/iscd/header.jpg",
             techs: ["WordPress", "PHP", "MySQL"],
             description:
-                "Official website of my corporate customer. 2 language support. Responsive and mobile friendly. Used WordPress and premium themes. Still active.",
+                "Official website of my corporate customer. 2 languages support. Responsive and mobile friendly. Used WordPress and premium themes. Still active.",
             screenShots: [
                 "https://works.isari.me/iscd/ss1.jpg",
                 "https://works.isari.me/iscd/ss2.jpg",
@@ -125,7 +140,7 @@ const Works: NextPage = () => {
             headerImage: "https://works.isari.me/iscpartners/header.jpg",
             techs: ["WordPress", "PHP", "MySQL"],
             description:
-                "Official website of my corporate customer. 2 language support. Responsive and mobile friendly. Used WordPress and premium themes. Still active.",
+                "Official website of my corporate customer. 2 languages support. Responsive and mobile friendly. Used WordPress and premium themes. Still active.",
             screenShots: [
                 "https://works.isari.me/iscpartners/ss2.jpg",
                 "https://works.isari.me/iscpartners/ss3.jpg",
@@ -157,10 +172,9 @@ const Works: NextPage = () => {
             title: "E-Meslek | Startup With my Teammate",
             year: "2012",
             headerImage: "https://works.isari.me/e-meslek/site/header.jpg",
-            techs: ["CodeIgniter", "PHP", "MySQL", "jQuery"],
+            techs: ["CodeIgniter", "LAMP Stack", "jQuery"],
             description:
-                "A community platform and forum to gather members of all kind of professions in Turkey. " +
-                "Both public and admin interfaces were developed by me and my teammate.",
+                "A community platform and forum to gather members of all kind of professions in Turkey. Developed both public and admin interfaces with my teammate.",
             screenShots: [
                 "https://works.isari.me/e-meslek/site/site1.jpg",
                 "https://works.isari.me/e-meslek/site/site2.jpg",
@@ -212,15 +226,16 @@ const Works: NextPage = () => {
         },
         {
             //wteturkiye.org
-            title: "Wteo Turkey | Sport Organization",
+            title: "WTEO Turkey | Sports Organization",
             year: "2010",
             headerImage: "https://works.isari.me/wteo/site/header.jpg",
             techs: ["PHP", "jQuery", "MySQL"],
             description:
-                "Official website of a sport organization in Turkey. " +
-                "It has common template/layout for HQ, and supports sub-schools to publish their content using the corporate layout/template of the organization. " +
-                "Also, all trainers may login and may add/edit content that they have permission. " +
-                "Website is not active anymore. ",
+                "Official website of a sports organization in Turkey. " +
+                "It has common template/layout for HeadQuarter, and supports sub-schools in separate provinces to publish " +
+                "their content using the corporate layout/template of the organization. Also, all trainers/school-admins " +
+                "may login and may add/edit content which they have permission to do. " +
+                "Website is not active anymore.",
             screenShots: [
                 "https://works.isari.me/wteo/site/site1.jpg",
                 "https://works.isari.me/wteo/site/site2.jpg",
@@ -275,8 +290,7 @@ const Works: NextPage = () => {
             description:
                 "As a junior member of Computer Programmers Team in my university life, " +
                 "I contributed to development process of official website of the university. " +
-                "Learnt many coding skills at that period. " +
-                "Website is active but not using this design anymore. ",
+                "Learnt many coding skills at that period. Website is active but not using the code I contributed",
             screenShots: [
                 "https://works.isari.me/pa-university/ss1.jpg",
                 "https://works.isari.me/pa-university/ss2.jpg",
