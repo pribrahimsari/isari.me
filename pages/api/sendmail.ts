@@ -1,29 +1,53 @@
 import sendgrid from "@sendgrid/mail";
 
-//todo: cannot get sendgrid api key --> so unauthorized
-process.env.SENDGRID_API_KEY && sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
-const sendFrom = process.env.SENDMAIL_FROM || "sender_name@domain.com";
-const sendTo = process.env.SENDMAIL_TO || "receiver_name@domain.com";
-//todo: .....@domain.com is forbidden
-//todo: be sure you got process env
+type sendEmailRequest = {
+    body: {
+        name: string;
+        email: string;
+        subject: string;
+        message: string;
+    };
+};
 
-//@ts-ignore
-async function sendEmail(req, res) {
-    try {
-        console.log("REQ.BODY", req.body);
-        await sendgrid.send({
-            to: sendTo, // Your email where you'll receive emails
-            from: sendFrom, // your website email address here
-            subject: `${req.body.subject}`,
-            html: `<div>${req.body.message}</div>`,
+type sendEmailResponse = {
+    status: (arg0: number) => {
+        (): any;
+        new (): any;
+        json: {
+            (arg0: {success?: [sendgrid.ClientResponse, {}]; error?: any}): any;
+            new (): any;
+        };
+    };
+};
+
+async function sendEmail(req: sendEmailRequest, res: sendEmailResponse) {
+    //get sendgrid api key
+    process.env.SENDGRID_API_KEY && sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
+
+    //show request body in console
+    console.log("Request.Body: ", req.body);
+
+    //send it
+    await sendgrid
+        .send({
+            to: "pr.ibrahimsari@gmail.com", // Your email where you'll receive emails
+            from: {name: req.body.name, email: "pr.ibrahimsari@gmail.com"}, // your website email address here
+            replyTo: {name: req.body.name, email: req.body.email},
+            subject: `[isari.me] ${req.body.subject} by [${req.body.name}]`,
+            html: `<div><b><u>CONTACT FORM MESSAGE:</u></b></div>
+                   <div><b>NAME:</b> ${req.body.name}</div>
+                   <div><b>SUBJECT:</b> ${req.body.subject}</div>
+                   <div><b>EMAIL:</b> ${req.body.email}</div>
+                   <div><b>MESSAGE:</b> ${req.body.message}</div>`,
+        })
+        .then((response) => {
+            console.log("Sendgrid.send SUCCESS: ", response[0].headers);
+            return res.status(response[0].statusCode).json({success: response});
+        })
+        .catch((error) => {
+            console.error("Sendgrid.send ERROR: ", error);
+            return res.status(error.statusCode || 500).json({error: error});
         });
-    } catch (error) {
-        // console.log(error);
-        // @ts-ignore
-        return res.status(error.statusCode || 500).json({error: error.message});
-    }
-
-    return res.status(200).json({error: ""});
 }
 
 export default sendEmail;
