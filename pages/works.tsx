@@ -94,6 +94,21 @@ const Works: NextPage = () => {
             //webArchiveLink: "",
         },
         {
+            //cormind
+            title: "Cormind | Company Website",
+            year: "2022",
+            headerImage: "https://works.isari.me/cormind/header.jpg",
+            techs: ["WordPress", "PHP", "MySQL"],
+            description:
+                "Official website of my corporate customer. 3 languages support. Responsive and mobile friendly. Used WordPress and premium themes. Still active.",
+            // screenShots: [
+            //     "https://works.isari.me/iscd/ss1.jpg",
+            // ],
+            currentLink: "https://cormind.com/",
+            //cloneLink: "",
+            //webArchiveLink: "",
+        },
+        {
             //akinakbar.com
             title: "Akın Akbar | Personal Website",
             year: "2013",

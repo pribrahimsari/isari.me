@@ -21,17 +21,18 @@ const About: NextPage = () => {
         },
         {
             year: "2021 - Now",
-            title: "FrontEnd Web Developer",
+            title: "FullStack Developer",
             company: "Digital Marketing",
-            techs: "React, TypeScript, MapBox/MapLibre",
+            techs: "React, TypeScript, MapBox/MapLibre, NestJS",
             jobs: [
                 "Built 3d in-door map solutions using React, Apple IMDF (geojson) and MapLibre",
                 "Route finding and visualization of user preferences (Material UI)",
+                "Rest API implementations (NestJS)",
             ],
         },
         {
             year: "2016 - 2020",
-            title: "Fullstack Web Developer & IT Consultant",
+            title: "FullStack Developer & IT Consultant",
             company: "Security & Consultancy",
             techs: "Laravel, PHP, MySQL, jQuery + jQuery Mobile, ChartJS",
             jobs: [
@@ -73,11 +74,11 @@ const About: NextPage = () => {
             program: "Computer Programming",
             university: "Cukurova University",
         },
-        {
-            year: "2016 - 2020",
-            program: "Faculty of Law (Bachelor's Degree)",
-            university: "Marmara University",
-        },
+        // {
+        //     year: "2016 - 2020",
+        //     program: "Faculty of Law (Bachelor's Degree)",
+        //     university: "Marmara University",
+        // },
         {
             year: "2007 - 2011",
             program: "Security Administration (Bachelor's Degree)",
@@ -258,7 +259,7 @@ const About: NextPage = () => {
                 </ul>
             </motion.section>
             <section className={styles.aboutPageSection}>
-                <Link href="/cv-ibrahim-sari-2022.pdf">
+                <Link href="/cv-ibrahim-sari-2022-1.pdf">
                     <a target="_blank">
                         <button className="btn">
                             <i className="fa fa-download"></i> &nbsp; Download my CV
