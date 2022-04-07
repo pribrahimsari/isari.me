@@ -194,7 +194,7 @@ const Contact: NextPage = () => {
                         <div>
                             {showSuccessMessage && (
                                 <p className="text-green-500 font-semibold text-sm my-2">
-                                    Thankyou! Your Message has been delivered.
+                                    Thank you! Your Message has been delivered.
                                 </p>
                             )}
                             {showFailureMessage && (
