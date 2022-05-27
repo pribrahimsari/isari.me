@@ -22,7 +22,7 @@ const About: NextPage = () => {
         {
             year: "2021 - Now",
             title: "FullStack Developer",
-            company: "Digital Marketing",
+            company: "VenueX",
             techs: "React, TypeScript, MapBox/MapLibre, NestJS",
             jobs: [
                 "Built 3d in-door map solutions using React, Apple IMDF (geojson) and MapLibre",
