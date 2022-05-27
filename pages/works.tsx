@@ -109,6 +109,26 @@ const Works: NextPage = () => {
             //webArchiveLink: "",
         },
         {
+            // isc tesis
+            title: "İSC Facility Management | Company Website",
+            year: "2022",
+            headerImage: "https://works.isari.me/isctesisyonetim/screenshots/1.jpg",
+            techs: ["WordPress", "PHP", "MySQL"],
+            description:
+                "Official website of my corporate customer. 2 languages support. Responsive and mobile friendly. Used WordPress and premium themes. Still active.",
+            screenShots: [
+                "https://works.isari.me/isctesisyonetim/screenshots/1.jpg",
+                "https://works.isari.me/isctesisyonetim/screenshots/2.jpg",
+                "https://works.isari.me/isctesisyonetim/screenshots/3.jpg",
+                "https://works.isari.me/isctesisyonetim/screenshots/4.jpg",
+                "https://works.isari.me/isctesisyonetim/screenshots/5.jpg",
+                "https://works.isari.me/isctesisyonetim/screenshots/6.jpg",
+            ],
+            currentLink: "https://isctesisyonetim.com",
+            //cloneLink: "",
+            //webArchiveLink: "",
+        },
+        {
             //akinakbar.com
             title: "Akın Akbar | Personal Website",
             year: "2013",
@@ -164,6 +184,23 @@ const Works: NextPage = () => {
             currentLink: "http://iscpartners.org/en",
             //cloneLink: "",
             //webArchiveLink: "",
+        },
+        {
+            // isc tesis - legacy
+            title: "İSC Facility Management | Company Website",
+            year: "2022",
+            headerImage: "https://works.isari.me/isctesisyonetim-old/screenshots/1.jpg",
+            techs: ["WordPress", "PHP", "MySQL"],
+            description:
+                "Official website of my corporate customer. 2 languages support. Responsive and mobile friendly. Used WordPress and premium themes. Not active.",
+            screenShots: [
+                "https://works.isari.me/isctesisyonetim/screenshots/1.jpg",
+                "https://works.isari.me/isctesisyonetim/screenshots/2.jpg",
+                "https://works.isari.me/isctesisyonetim/screenshots/3.jpg",
+            ],
+            // currentLink: "https://isctesisyonetim.com",
+            cloneLink: "https://works.isari.me/isctesisyonetim-old/html",
+            webArchiveLink: "https://web.archive.org/web/20220122153656/https://isctesisyonetim.com/",
         },
         {
             //SAM Güv.
