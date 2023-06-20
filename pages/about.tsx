@@ -10,6 +10,18 @@ import {motion} from "framer-motion";
 const About: NextPage = () => {
     const experienceData = [
         {
+            year: "2022 - Now",
+            title: "Frontend Developer",
+            company: "OceanVoy - London-based Startup Company",
+            companyLogoUrl: "/assets/experience-company-logos/oceanvoy-logo.svg",
+            techs: "React, TypeScript, JavaScript, GraphQL, MapBox, Serverless, AppSync",
+            jobs: [
+                "developed and maintained the UI of the web application using the technologies: TypeScript, React, GraphQL, MaterialUI and MapBox.",
+                "built reusable component libraries and tools using the best practices in software development.",
+                "contributed to the backend architecture using the AWS Serverless tech stack: AWS Lambda microservices, GraphQL API with AWS AppSync, AWS DynamoDB and RDS.",
+            ],
+        },
+        {
             year: "2010 - Now",
             title: "Software Developer & IT Consultant",
             company: "Freelance",
