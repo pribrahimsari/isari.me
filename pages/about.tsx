@@ -33,8 +33,9 @@ const About: NextPage = () => {
         },
         {
             year: "2021 - Now",
-            title: "FullStack Developer",
-            company: "VenueX",
+            title: "Full-Stack Developer",
+            company: "VenueX - StartUp Company - Istanbul, Turkey",
+            companyLogoUrl: "/assets/experience-company-logos/venuex-logo.png",
             techs: "React, TypeScript, MapBox/MapLibre, NestJS",
             jobs: [
                 "Built 3d in-door map solutions using React, Apple IMDF (geojson) and MapLibre",
@@ -44,8 +45,9 @@ const About: NextPage = () => {
         },
         {
             year: "2016 - 2020",
-            title: "FullStack Developer & IT Consultant",
-            company: "Security & Consultancy",
+            title: "Full-Stack Developer & IT Consultant",
+            company: "ISC Security Consultancy & Group Companies - Istanbul, Turkey",
+            companyLogoUrl: "/assets/experience-company-logos/isc-logo-en.png",
             techs: "Laravel, PHP, MySQL, jQuery + jQuery Mobile, ChartJS",
             jobs: [
                 "Built in-house CRM (Customer Relationship Management) software (Laravel, PHP, MySQL, jQuery)",
@@ -58,7 +60,8 @@ const About: NextPage = () => {
         {
             year: "2011 - 2016",
             title: "Software Developer & Project Supervisor",
-            company: "Security General Directorate & IT Department",
+            company: "Security General Directorate & IT Department - Ankara, Turkey",
+            companyLogoUrl: "/assets/experience-company-logos/egm.png",
             techs: "PHP, MySQL, jQuery, ASP.Net, C#, VB.Net, Microsoft SQL",
             jobs: [
                 "Designed & built official websites of some-subsidiaries using PHP, MySQL and jQuery.",
@@ -71,7 +74,8 @@ const About: NextPage = () => {
         {
             year: "2009 - 2011",
             title: "Junior PHP Developer",
-            company: "University of Turkish Police Academy",
+            company: "University of Turkish Police Academy - Ankara, Turkey",
+            companyLogoUrl: "/assets/experience-company-logos/akademi.png",
             techs: "PHP, MySQL, jQuery",
             jobs: [
                 "Contributed to re-designing official website of university with teammates.",
