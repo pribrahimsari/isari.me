@@ -6,9 +6,23 @@ import Head from "next/head";
 import Link from "next/link";
 import {RoughNotation} from "react-rough-notation";
 import {motion} from "framer-motion";
+import Image from "next/image";
 
 const About: NextPage = () => {
     const experienceData = [
+        {
+            year: "2022 - Now",
+            title: "Frontend Developer",
+            company: "OceanVoy - London-based Startup Company",
+            companyLogoUrl: "/assets/experience-company-logos/oceanvoy-logo.svg",
+            companyWebsite: "https://oceanvoy.com",
+            techs: "React, TypeScript, JavaScript, GraphQL, MapBox, Serverless, AppSync",
+            jobs: [
+                "developed and maintained the UI of the web application using the technologies: TypeScript, React, GraphQL, MaterialUI and MapBox.",
+                "built reusable component libraries and tools using the best practices in software development.",
+                "contributed to the backend architecture using the AWS Serverless tech stack: AWS Lambda microservices, GraphQL API with AWS AppSync, AWS DynamoDB and RDS.",
+            ],
+        },
         {
             year: "2010 - Now",
             title: "Software Developer & IT Consultant",
@@ -21,8 +35,10 @@ const About: NextPage = () => {
         },
         {
             year: "2021 - Now",
-            title: "FullStack Developer",
-            company: "VenueX",
+            title: "Full-Stack Developer",
+            company: "VenueX - StartUp Company - Istanbul, Turkey",
+            companyLogoUrl: "/assets/experience-company-logos/venuex-logo.png",
+            companyWebsite: "https://venuex.io",
             techs: "React, TypeScript, MapBox/MapLibre, NestJS",
             jobs: [
                 "Built 3d in-door map solutions using React, Apple IMDF (geojson) and MapLibre",
@@ -32,8 +48,10 @@ const About: NextPage = () => {
         },
         {
             year: "2016 - 2020",
-            title: "FullStack Developer & IT Consultant",
-            company: "Security & Consultancy",
+            title: "Full-Stack Developer & IT Consultant",
+            company: "ISC Security Consultancy & Group Companies - Istanbul, Turkey",
+            companyLogoUrl: "/assets/experience-company-logos/isc-logo-en.png",
+            companyWebsite: "https://iscd.com.tr/en",
             techs: "Laravel, PHP, MySQL, jQuery + jQuery Mobile, ChartJS",
             jobs: [
                 "Built in-house CRM (Customer Relationship Management) software (Laravel, PHP, MySQL, jQuery)",
@@ -46,7 +64,9 @@ const About: NextPage = () => {
         {
             year: "2011 - 2016",
             title: "Software Developer & Project Supervisor",
-            company: "Security General Directorate & IT Department",
+            company: "Security General Directorate & IT Department - Ankara, Turkey",
+            companyLogoUrl: "/assets/experience-company-logos/egm.png",
+            companyWebsite: "https://www.egm.gov.tr/bilgiteknolojilerivehaberlesme",
             techs: "PHP, MySQL, jQuery, ASP.Net, C#, VB.Net, Microsoft SQL",
             jobs: [
                 "Designed & built official websites of some-subsidiaries using PHP, MySQL and jQuery.",
@@ -59,7 +79,9 @@ const About: NextPage = () => {
         {
             year: "2009 - 2011",
             title: "Junior PHP Developer",
-            company: "University of Turkish Police Academy",
+            company: "University of Turkish Police Academy - Ankara, Turkey",
+            companyLogoUrl: "/assets/experience-company-logos/akademi.png",
+            companyWebsite: "https://www.pa.edu.tr/",
             techs: "PHP, MySQL, jQuery",
             jobs: [
                 "Contributed to re-designing official website of university with teammates.",
@@ -113,16 +135,15 @@ const About: NextPage = () => {
                         transition={{delay: 0.5}}
                     >
                         <h2>İbrahim SARI</h2>
-                        <h4>Web Developer / Istanbul, TURKEY</h4>
+                        <h4>Frontend Developer</h4>
                     </motion.div>
                 </div>
                 <motion.div initial={{opacity: 0, y: -50}} animate={{opacity: 1, y: 0}} transition={{delay: 0.7}}>
                     <p>
-                        👶 Borned in 1989.{" "}
+                        📅 Has been developing software for various industries{" "}
                         <RoughNotation type="underline" color="#b71c1c" show animationDelay={2000}>
-                            I am {new Date().getFullYear() - 1989}
+                            since 2010.
                         </RoughNotation>
-                        .
                     </p>
                     <p>👨‍💻 Loves making somethings work, learning and teaching.</p>
                     <p>
@@ -143,7 +164,6 @@ const About: NextPage = () => {
                         </RoughNotation>
                         , as I love teaching or learning new things.
                     </p>
-                    <p>👨‍👩‍👦‍👦 A husband and father.</p>
                 </motion.div>
                 <motion.div
                     className={styles.techStack}
@@ -204,8 +224,41 @@ const About: NextPage = () => {
                                         </span>
                                     </div>
                                     <div className={stylesTimeline.desc}>
+                                        {experience.companyLogoUrl && (
+                                            <div>
+                                                {experience.companyWebsite ? (
+                                                    <a
+                                                        href={experience.companyWebsite}
+                                                        target="_blank"
+                                                        rel="noreferrer"
+                                                    >
+                                                        <Image
+                                                            src={experience.companyLogoUrl}
+                                                            alt={experience.company}
+                                                            layout="responsive"
+                                                            width={300}
+                                                            height={100}
+                                                        />
+                                                    </a>
+                                                ) : (
+                                                    <Image
+                                                        src={experience.companyLogoUrl}
+                                                        alt={experience.company}
+                                                        layout="responsive"
+                                                        width={300}
+                                                        height={100}
+                                                    />
+                                                )}
+                                            </div>
+                                        )}
                                         <div style={{color: "var(--blueOfLogo)"}}>
-                                            <b>{experience.company}</b>
+                                            {experience.companyWebsite ? (
+                                                <a href={experience.companyWebsite} target="_blank" rel="noreferrer">
+                                                    <b>{experience.company}</b>
+                                                </a>
+                                            ) : (
+                                                <b>{experience.company}</b>
+                                            )}
                                         </div>
                                         <div>
                                             <ul>
