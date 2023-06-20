@@ -118,11 +118,10 @@ const About: NextPage = () => {
                 </div>
                 <motion.div initial={{opacity: 0, y: -50}} animate={{opacity: 1, y: 0}} transition={{delay: 0.7}}>
                     <p>
-                        👶 Borned in 1989.{" "}
+                        📅 Has been developing software for various industries{" "}
                         <RoughNotation type="underline" color="#b71c1c" show animationDelay={2000}>
-                            I am {new Date().getFullYear() - 1989}
+                            since 2010.
                         </RoughNotation>
-                        .
                     </p>
                     <p>👨‍💻 Loves making somethings work, learning and teaching.</p>
                     <p>
