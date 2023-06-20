@@ -113,7 +113,7 @@ const About: NextPage = () => {
                         transition={{delay: 0.5}}
                     >
                         <h2>İbrahim SARI</h2>
-                        <h4>Web Developer / Istanbul, TURKEY</h4>
+                        <h4>Frontend Developer</h4>
                     </motion.div>
                 </div>
                 <motion.div initial={{opacity: 0, y: -50}} animate={{opacity: 1, y: 0}} transition={{delay: 0.7}}>
