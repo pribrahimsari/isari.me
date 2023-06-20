@@ -6,6 +6,7 @@ import Head from "next/head";
 import Link from "next/link";
 import {RoughNotation} from "react-rough-notation";
 import {motion} from "framer-motion";
+import Image from "next/image";
 
 const About: NextPage = () => {
     const experienceData = [
@@ -218,6 +219,17 @@ const About: NextPage = () => {
                                         </span>
                                     </div>
                                     <div className={stylesTimeline.desc}>
+                                        {experience.companyLogoUrl && (
+                                            <div>
+                                                <Image
+                                                    src={experience.companyLogoUrl}
+                                                    alt={experience.company}
+                                                    layout="responsive"
+                                                    width={300}
+                                                    height={100}
+                                                />
+                                            </div>
+                                        )}
                                         <div style={{color: "var(--blueOfLogo)"}}>
                                             <b>{experience.company}</b>
                                         </div>
