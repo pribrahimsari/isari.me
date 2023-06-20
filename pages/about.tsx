@@ -142,7 +142,6 @@ const About: NextPage = () => {
                         </RoughNotation>
                         , as I love teaching or learning new things.
                     </p>
-                    <p>👨‍👩‍👦‍👦 A husband and father.</p>
                 </motion.div>
                 <motion.div
                     className={styles.techStack}
