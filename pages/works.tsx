@@ -27,7 +27,7 @@ const Works: NextPage = () => {
         {
             //CRM
             title: "CRM (Customer Relationship Management)",
-            year: "2018 - 2022",
+            year: "2018 - 2023",
             headerImage: "https://works.isari.me/crm/header.jpg",
             techs: ["Laravel", "PHP, MySQL", "jQuery, Mobile"],
             description:
