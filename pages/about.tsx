@@ -126,7 +126,7 @@ const About: NextPage = () => {
                         animate={{scale: 1}}
                         transition={{delay: 0.3}}
                     >
-                        <img src="hero-profile.jpg" alt="my picture" />
+                        <img src="hero-profile-2.jpg" alt="my picture" />
                     </motion.div>
                     <motion.div
                         className={styles.aboutPageTitleTexts}
@@ -140,29 +140,26 @@ const About: NextPage = () => {
                 </div>
                 <motion.div initial={{opacity: 0, y: -50}} animate={{opacity: 1, y: 0}} transition={{delay: 0.7}}>
                     <p>
-                        📅 Has been developing software for various industries{" "}
-                        <RoughNotation type="underline" color="#b71c1c" show animationDelay={2000}>
-                            since 2010.
+                        I’m a Software Developer with{" "}
+                        <RoughNotation type="highlight" color="#c89903" show animationDelay={2000}>
+                            10+ years{" "}
                         </RoughNotation>
-                    </p>
-                    <p>👨‍💻 Loves making somethings work, learning and teaching.</p>
-                    <p>
-                        🎤 Had been to{" "}
-                        <RoughNotation type="underline" color="#b71c1c" show animationDelay={3500}>
-                            7 countries
-                        </RoughNotation>{" "}
-                        so far. Can{" "}
-                        <RoughNotation type="highlight" color="#c89903" show animationDelay={4000}>
-                            communicate in both English and Turkish
-                        </RoughNotation>{" "}
-                        languages.
+                        of hands-on experience, currently{" "}
+                        <RoughNotation type="underline" color="#b71c1c" show animationDelay={2500}>
+                            focused on Frontend Development{" "}
+                        </RoughNotation>
+                        with JavaScript, TypeScript and React.
                     </p>
                     <p>
-                        ⚙️Had opportunity to work with many kinds of people and teams.{" "}
-                        <RoughNotation type="underline" color="#b71c1c" show animationDelay={5000}>
-                            No problem with team cohesion
+                        I love to design in all manners, from the backend to the frontend. Understanding a project,
+                        improving upon it and bringing it to life by code keeps me engaged and delighted.
+                    </p>
+                    <p>
+                        I really enjoy working within a team, where I can{" "}
+                        <RoughNotation type="underline" color="#b71c1c" show animationDelay={4000}>
+                            learn and help{" "}
                         </RoughNotation>
-                        , as I love teaching or learning new things.
+                        teammates while creating something unique and having fun doing it.
                     </p>
                 </motion.div>
                 <motion.div
