@@ -88,7 +88,7 @@ const Home: NextPage = () => {
                             </a>
                         </Link>
 
-                        <Link href="/cv-ibrahim-sari-20230620.pdf">
+                        <Link href="/ibrahim-sari-resume-20230801.pdf">
                             <a target="_blank">
                                 <button className="btn">
                                     <i className="fa fa-download"></i> &nbsp; Download my CV
