@@ -88,7 +88,7 @@ const Home: NextPage = () => {
                             </a>
                         </Link>
 
-                        <Link href="/cv-ibrahim-sari-20230620.pdf">
+                        <Link href="/ibrahim-sari-resume-20230801.pdf">
                             <a target="_blank">
                                 <button className="btn">
                                     <i className="fa fa-download"></i> &nbsp; Download my CV
@@ -99,8 +99,8 @@ const Home: NextPage = () => {
                 </div>
                 <div className={styles.circularLandscape}>
                     <motion.img
-                        src="hero-profile.jpg"
-                        width="250px"
+                        src="hero-profile-2.jpg"
+                        width="300px"
                         alt="my picture"
                         initial={{opacity: 0, x: 80}}
                         animate={{opacity: 1, x: 0}}

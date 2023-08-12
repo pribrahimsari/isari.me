@@ -25,17 +25,16 @@ const About: NextPage = () => {
         },
         {
             year: "2010 - Now",
-            title: "Software Developer & IT Consultant",
+            title: "Software Developer",
             company: "Freelance",
             techs: "React, TypeScript, Laravel, CodeIgniter, LAMP Stack, jQuery, jQuery UI & Mobile",
             jobs: [
-                "Developed many websites for my personal or corporate customers.",
                 "Developing web applications/sites for over 10 years. Follows the improving web technologies; and according to the requirements of my freelance customers I use React, TypeScript, JavaScript, Laravel, CodeIgniter, LAMP Stack, jQuery, jQuery UI and Mobile.",
             ],
         },
         {
-            year: "2021 - Now",
-            title: "Full-Stack Developer",
+            year: "2021 - 2022",
+            title: "Full Stack Developer",
             company: "VenueX - StartUp Company - Istanbul, Turkey",
             companyLogoUrl: "/assets/experience-company-logos/venuex-logo.png",
             companyWebsite: "https://venuex.io",
@@ -47,28 +46,46 @@ const About: NextPage = () => {
             ],
         },
         {
-            year: "2016 - 2020",
-            title: "Full-Stack Developer & IT Consultant",
+            year: "2020 - 2022",
+            title: "IT Manager",
             company: "ISC Security Consultancy & Group Companies - Istanbul, Turkey",
             companyLogoUrl: "/assets/experience-company-logos/isc-logo-en.png",
             companyWebsite: "https://iscd.com.tr/en",
             techs: "Laravel, PHP, MySQL, jQuery + jQuery Mobile, ChartJS",
             jobs: [
+                'The company, growing through digital transformation, began providing services in different sectors with 5 subsidiary companies and trademarks under the "group companies" umbrella. As the structure expanded, I assumed a decision-making role in identifying various IT needs of the growing setup and devising solutions.' +
+                    "In addition to my software development responsibilities, I also hold the position of IT Manager in the head company, where I was responsible for:",
+                "Organizing corporate emails,",
+                "Managing the internal IT support operations of companies,",
+                "Organizing internal network structure and security layers,",
+                "Building and installing a Secure Cloud File Sharing Platform (PHP, MySQL),",
+                "Re-designing and building the responsive official websites of the main and affiliated companies.",
+            ],
+        },
+        {
+            year: "2020 - 2022",
+            title: "Full Stack Developer",
+            company: "ISC Security Consultancy & Group Companies - Istanbul, Turkey",
+            companyLogoUrl: "/assets/experience-company-logos/isc-logo-en.png",
+            companyWebsite: "https://iscd.com.tr/en",
+            techs: "Laravel, PHP, MySQL, jQuery + jQuery Mobile, ChartJS",
+            jobs: [
+                "As a Full Stack Developer on the digital transformation of its services of ISC:",
                 "Built in-house CRM (Customer Relationship Management) software (Laravel, PHP, MySQL, jQuery)",
                 "Built web and mobile application for site supervisions, sending created reports to customers and generate statistical results. (Laravel, PHP, MySQL, jQuery, jQuery Mobile, Chart.js)",
                 "Push notifications to subscribers/customers for emergencies (SOAP / XML)",
-                "Built and installed Secure Cloud File Sharing Platform. (PHP, MySQL)",
-                "Re-designed and built responsively official websites of main and affiliated companies.",
             ],
         },
         {
             year: "2011 - 2016",
-            title: "Software Developer & Project Supervisor",
-            company: "Security General Directorate & IT Department - Ankara, Turkey",
+            title: "Full Stack Developer",
+            company: "Security General Directorate | IT Department - Ankara, Turkey",
             companyLogoUrl: "/assets/experience-company-logos/egm.png",
             companyWebsite: "https://www.egm.gov.tr/bilgiteknolojilerivehaberlesme",
             techs: "PHP, MySQL, jQuery, ASP.Net, C#, VB.Net, Microsoft SQL",
             jobs: [
+                "The General Directorate of Security is the national civilian police force responsible for law enforcement of the Republic of Turkey, which is affiliated with the Ministry of Interior.",
+                "As in Frontend, Backend and Full Stack Developer roles in different teams during the 5 years:",
                 "Designed & built official websites of some-subsidiaries using PHP, MySQL and jQuery.",
                 "Built on-premise main and sub web applications for management of human and time resources using PHP, MySQL and jQuery.",
                 "Contributed to building of Electronic Document Management System (EDMS) as frontend developer. (VB.NET + MsSQL)",
@@ -96,21 +113,21 @@ const About: NextPage = () => {
             program: "Computer Programming",
             university: "Cukurova University",
         },
+        {
+            year: "2016 - 2020",
+            program: "Faculty of Law (Bachelor's Degree)",
+            university: "Marmara University",
+        },
         // {
-        //     year: "2016 - 2020",
-        //     program: "Faculty of Law (Bachelor's Degree)",
-        //     university: "Marmara University",
+        //     year: "2007 - 2011",
+        //     program: "Security Administration (Bachelor's Degree)",
+        //     university: "Faculty of Security Sciences, University of Turkish Police Academy",
         // },
-        {
-            year: "2007 - 2011",
-            program: "Security Administration (Bachelor's Degree)",
-            university: "Faculty of Security Sciences, University of Turkish Police Academy",
-        },
-        {
-            year: "2007 - 2011",
-            program: "Public Administration (Double Major)",
-            university: "Faculty of Security Sciences, University of Turkish Police Academy",
-        },
+        // {
+        //     year: "2007 - 2011",
+        //     program: "Public Administration (Double Major)",
+        //     university: "Faculty of Security Sciences, University of Turkish Police Academy",
+        // },
     ];
 
     return (
@@ -126,7 +143,7 @@ const About: NextPage = () => {
                         animate={{scale: 1}}
                         transition={{delay: 0.3}}
                     >
-                        <img src="hero-profile.jpg" alt="my picture" />
+                        <img src="hero-profile-2.jpg" alt="my picture" />
                     </motion.div>
                     <motion.div
                         className={styles.aboutPageTitleTexts}
@@ -140,29 +157,26 @@ const About: NextPage = () => {
                 </div>
                 <motion.div initial={{opacity: 0, y: -50}} animate={{opacity: 1, y: 0}} transition={{delay: 0.7}}>
                     <p>
-                        📅 Has been developing software for various industries{" "}
-                        <RoughNotation type="underline" color="#b71c1c" show animationDelay={2000}>
-                            since 2010.
+                        I’m a Software Developer with{" "}
+                        <RoughNotation type="highlight" color="#c89903" show animationDelay={2000}>
+                            10+ years{" "}
                         </RoughNotation>
-                    </p>
-                    <p>👨‍💻 Loves making somethings work, learning and teaching.</p>
-                    <p>
-                        🎤 Had been to{" "}
-                        <RoughNotation type="underline" color="#b71c1c" show animationDelay={3500}>
-                            7 countries
-                        </RoughNotation>{" "}
-                        so far. Can{" "}
-                        <RoughNotation type="highlight" color="#c89903" show animationDelay={4000}>
-                            communicate in both English and Turkish
-                        </RoughNotation>{" "}
-                        languages.
+                        of hands-on experience, currently{" "}
+                        <RoughNotation type="underline" color="#b71c1c" show animationDelay={2500}>
+                            focused on Frontend Development{" "}
+                        </RoughNotation>
+                        with JavaScript, TypeScript and React.
                     </p>
                     <p>
-                        ⚙️Had opportunity to work with many kinds of people and teams.{" "}
-                        <RoughNotation type="underline" color="#b71c1c" show animationDelay={5000}>
-                            No problem with team cohesion
+                        I love to design in all manners, from the backend to the frontend. Understanding a project,
+                        improving upon it and bringing it to life by code keeps me engaged and delighted.
+                    </p>
+                    <p>
+                        I really enjoy working within a team, where I can{" "}
+                        <RoughNotation type="underline" color="#b71c1c" show animationDelay={4000}>
+                            learn and help{" "}
                         </RoughNotation>
-                        , as I love teaching or learning new things.
+                        teammates while creating something unique and having fun doing it.
                     </p>
                 </motion.div>
                 <motion.div
@@ -312,7 +326,7 @@ const About: NextPage = () => {
                 </ul>
             </motion.section>
             <section className={styles.aboutPageSection}>
-                <Link href="/cv-ibrahim-sari-20230620.pdf">
+                <Link href="/ibrahim-sari-resume-20230801.pdf">
                     <a target="_blank">
                         <button className="btn">
                             <i className="fa fa-download"></i> &nbsp; Download my CV
