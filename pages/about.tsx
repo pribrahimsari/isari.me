@@ -11,7 +11,20 @@ import Image from "next/image";
 const About: NextPage = () => {
     const experienceData = [
         {
-            year: "2022 - Now",
+            year: "2023 - Now",
+            title: "Frontend Developer",
+            company: "Mintus - London-based Startup Company",
+            companyLogoUrl: "/assets/experience-company-logos/mintus.svg",
+            companyWebsite: "https://mintus.com",
+            techs: "React, NextJS, TypeScript, JavaScript, MaterialUI",
+            jobs: [
+                "developed and maintained the UI of Backoffice Application: TypeScript, React and MaterialUI",
+                "built reusable component libraries and tools using the best practices in software development.",
+                "maintained and contributed to frontend application of retail customer app using NextJS",
+            ],
+        },
+        {
+            year: "2022 - 2023",
             title: "Frontend Developer",
             company: "OceanVoy - London-based Startup Company",
             companyLogoUrl: "/assets/experience-company-logos/oceanvoy-logo.svg",
@@ -23,15 +36,15 @@ const About: NextPage = () => {
                 "contributed to the backend architecture using the AWS Serverless tech stack: AWS Lambda microservices, GraphQL API with AWS AppSync, AWS DynamoDB and RDS.",
             ],
         },
-        {
-            year: "2010 - Now",
-            title: "Software Developer",
-            company: "Freelance",
-            techs: "React, TypeScript, Laravel, CodeIgniter, LAMP Stack, jQuery, jQuery UI & Mobile",
-            jobs: [
-                "Developing web applications/sites for over 10 years. Follows the improving web technologies; and according to the requirements of my freelance customers I use React, TypeScript, JavaScript, Laravel, CodeIgniter, LAMP Stack, jQuery, jQuery UI and Mobile.",
-            ],
-        },
+        // {
+        //     year: "2010 - Now",
+        //     title: "Software Developer",
+        //     company: "Freelance",
+        //     techs: "React, TypeScript, Laravel, CodeIgniter, LAMP Stack, jQuery, jQuery UI & Mobile",
+        //     jobs: [
+        //         "Developing web applications/sites for over 10 years. Follows the improving web technologies; and according to the requirements of my freelance customers I use React, TypeScript, JavaScript, Laravel, CodeIgniter, LAMP Stack, jQuery, jQuery UI and Mobile.",
+        //     ],
+        // },
         {
             year: "2021 - 2022",
             title: "Full Stack Developer",
