@@ -9,21 +9,21 @@ import {motion} from "framer-motion";
 
 const Works: NextPage = () => {
     const myWorks = [
-        {
-            //My Portfolio
-            title: "My Personal Portfolio Website",
-            year: "2022",
-            headerImage: "https://works.ibrahimsari.com.tr/isari-me/header.jpg",
-            techs: ["React", "TypeScript", "Pure CSS"],
-            description:
-                "Re-designed my personal portfolio website from scratch with actual techs. " +
-                "Fully responsive, dark/light theme support, used Framer-Motion, Rough-Notation and VantaJS for animations. " +
-                "Vercel for deployment with my personal domain.",
-            //screenShots: [""],
-            //currentLink: "",
-            //cloneLink: "",
-            //webArchiveLink: "",
-        },
+        // {
+        //     //My Portfolio
+        //     title: "My Personal Portfolio Website",
+        //     year: "2022",
+        //     headerImage: "https://works.ibrahimsari.com.tr/isari-me/header.jpg",
+        //     techs: ["React", "TypeScript", "Pure CSS"],
+        //     description:
+        //         "Re-designed my personal portfolio website from scratch with actual techs. " +
+        //         "Fully responsive, dark/light theme support, used Framer-Motion, Rough-Notation and VantaJS for animations. " +
+        //         "Vercel for deployment with my personal domain.",
+        //     //screenShots: [""],
+        //     //currentLink: "",
+        //     //cloneLink: "",
+        //     //webArchiveLink: "",
+        // },
         {
             //CRM
             title: "CRM (Customer Relationship Management)",
@@ -321,43 +321,43 @@ const Works: NextPage = () => {
             cloneLink: "https://works.ibrahimsari.com.tr/awte/html_copy/index.php-1.html?pid=16&lang=en",
             webArchiveLink: "https://web.archive.org/web/20111015100629/http://www.awte.org/index.php?pid=16&lang=en",
         },
-        {
-            //prime min. dep.
-            title: "Official Website",
-            year: "2011",
-            headerImage: "https://works.ibrahimsari.com.tr/prime-protection/header.jpg",
-            techs: ["PHP", "jQuery", "MySQL"],
-            description: "Official website of a public institute. It is not active anymore. ",
-            screenShots: ["https://works.ibrahimsari.com.tr/prime-protection/design.jpg"],
-            //currentLink: "",
-            cloneLink: "https://works.ibrahimsari.com.tr/prime-protection/",
-            //webArchiveLink: "",
-        },
-        {
-            //University Website
-            title: "University of Pol. Academy | Official Website",
-            year: "2009 - 2011",
-            headerImage: "https://works.ibrahimsari.com.tr/pa-university/header.jpg",
-            techs: ["PHP", "jQuery", "MySQL"],
-            description:
-                "As a junior member of Computer Programmers Team in my university life, " +
-                "I contributed to development process of official website of the university. " +
-                "Learnt many coding skills at that period. Website is active but not using the code I contributed",
-            screenShots: [
-                "https://works.ibrahimsari.com.tr/pa-university/ss1.jpg",
-                "https://works.ibrahimsari.com.tr/pa-university/ss2.jpg",
-                "https://works.ibrahimsari.com.tr/pa-university/ss3.jpg",
-            ],
-            //currentLink: "",
-            //cloneLink: "",
-            webArchiveLink: "https://web.archive.org/web/20100629123218/http://www.pa.edu.tr/",
-        },
+        // {
+        //     //prime min. dep.
+        //     title: "Official Website",
+        //     year: "2011",
+        //     headerImage: "https://works.ibrahimsari.com.tr/prime-protection/header.jpg",
+        //     techs: ["PHP", "jQuery", "MySQL"],
+        //     description: "Official website of a public institute. It is not active anymore. ",
+        //     screenShots: ["https://works.ibrahimsari.com.tr/prime-protection/design.jpg"],
+        //     //currentLink: "",
+        //     cloneLink: "https://works.ibrahimsari.com.tr/prime-protection/",
+        //     //webArchiveLink: "",
+        // },
+        // {
+        //     //University Website
+        //     title: "University of Pol. Academy | Official Website",
+        //     year: "2009 - 2011",
+        //     headerImage: "https://works.ibrahimsari.com.tr/pa-university/header.jpg",
+        //     techs: ["PHP", "jQuery", "MySQL"],
+        //     description:
+        //         "As a junior member of Computer Programmers Team in my university life, " +
+        //         "I contributed to development process of official website of the university. " +
+        //         "Learnt many coding skills at that period. Website is active but not using the code I contributed",
+        //     screenShots: [
+        //         "https://works.ibrahimsari.com.tr/pa-university/ss1.jpg",
+        //         "https://works.ibrahimsari.com.tr/pa-university/ss2.jpg",
+        //         "https://works.ibrahimsari.com.tr/pa-university/ss3.jpg",
+        //     ],
+        //     //currentLink: "",
+        //     //cloneLink: "",
+        //     webArchiveLink: "https://web.archive.org/web/20100629123218/http://www.pa.edu.tr/",
+        // },
     ];
 
     return (
         <Layout>
             <Head>
-                <title>My Works | İbrahim SARI</title>
+                <title>My Works | İ. S.</title>
             </Head>
             <div className={styles.worksWrapper}>
                 <h1>Some of My Works</h1>

@@ -89,36 +89,36 @@ const About: NextPage = () => {
                 "Push notifications to subscribers/customers for emergencies (SOAP / XML)",
             ],
         },
-        {
-            year: "2011 - 2016",
-            title: "Full Stack Developer",
-            company: "Security General Directorate | IT Department - Ankara, Turkey",
-            companyLogoUrl: "/assets/experience-company-logos/egm.png",
-            companyWebsite: "https://www.egm.gov.tr/bilgiteknolojilerivehaberlesme",
-            techs: "PHP, MySQL, jQuery, ASP.Net, C#, VB.Net, Microsoft SQL",
-            jobs: [
-                "The General Directorate of Security is the national civilian police force responsible for law enforcement of the Republic of Turkey, which is affiliated with the Ministry of Interior.",
-                "As in Frontend, Backend and Full Stack Developer roles in different teams during the 5 years:",
-                "Designed & built official websites of some-subsidiaries using PHP, MySQL and jQuery.",
-                "Built on-premise main and sub web applications for management of human and time resources using PHP, MySQL and jQuery.",
-                "Contributed to building of Electronic Document Management System (EDMS) as frontend developer. (VB.NET + MsSQL)",
-                "Managed 2 sub-applications including communication with stakeholders of applications and managed 2 junior developers by handling user experience feedbacks, requirement analysis and project schedule/program.",
-                "Other administrative affairs.",
-            ],
-        },
-        {
-            year: "2009 - 2011",
-            title: "Junior PHP Developer",
-            company: "University of Turkish Police Academy - Ankara, Turkey",
-            companyLogoUrl: "/assets/experience-company-logos/akademi.png",
-            companyWebsite: "https://www.pa.edu.tr/",
-            techs: "PHP, MySQL, jQuery",
-            jobs: [
-                "Contributed to re-designing official website of university with teammates.",
-                "Contributed to building a custom CMS to manage content of website.",
-                "Built on-premise web apps and sub-modules used to organize administrative affairs of the university.",
-            ],
-        },
+        // {
+        //     year: "2011 - 2016",
+        //     title: "Full Stack Developer",
+        //     company: "Security General Directorate | IT Department - Ankara, Turkey",
+        //     companyLogoUrl: "/assets/experience-company-logos/egm.png",
+        //     companyWebsite: "https://www.egm.gov.tr/bilgiteknolojilerivehaberlesme",
+        //     techs: "PHP, MySQL, jQuery, ASP.Net, C#, VB.Net, Microsoft SQL",
+        //     jobs: [
+        //         "The General Directorate of Security is the national civilian police force responsible for law enforcement of the Republic of Turkey, which is affiliated with the Ministry of Interior.",
+        //         "As in Frontend, Backend and Full Stack Developer roles in different teams during the 5 years:",
+        //         "Designed & built official websites of some-subsidiaries using PHP, MySQL and jQuery.",
+        //         "Built on-premise main and sub web applications for management of human and time resources using PHP, MySQL and jQuery.",
+        //         "Contributed to building of Electronic Document Management System (EDMS) as frontend developer. (VB.NET + MsSQL)",
+        //         "Managed 2 sub-applications including communication with stakeholders of applications and managed 2 junior developers by handling user experience feedbacks, requirement analysis and project schedule/program.",
+        //         "Other administrative affairs.",
+        //     ],
+        // },
+        // {
+        //     year: "2009 - 2011",
+        //     title: "Junior PHP Developer",
+        //     company: "University of Turkish Police Academy - Ankara, Turkey",
+        //     companyLogoUrl: "/assets/experience-company-logos/akademi.png",
+        //     companyWebsite: "https://www.pa.edu.tr/",
+        //     techs: "PHP, MySQL, jQuery",
+        //     jobs: [
+        //         "Contributed to re-designing official website of university with teammates.",
+        //         "Contributed to building a custom CMS to manage content of website.",
+        //         "Built on-premise web apps and sub-modules used to organize administrative affairs of the university.",
+        //     ],
+        // },
     ];
     const educationData = [
         {
@@ -146,7 +146,7 @@ const About: NextPage = () => {
     return (
         <Layout>
             <Head>
-                <title>About Me | İbrahim SARI</title>
+                <title>About Me | İ. S.</title>
             </Head>
             <section>
                 <div className={styles.aboutPageTitleDiv}>
@@ -156,7 +156,7 @@ const About: NextPage = () => {
                         animate={{scale: 1}}
                         transition={{delay: 0.3}}
                     >
-                        <img src="hero-profile-2.jpg" alt="my picture" />
+                        <img src="https://avatars.githubusercontent.com/u/36038198?v=4" alt="my picture" />
                     </motion.div>
                     <motion.div
                         className={styles.aboutPageTitleTexts}
@@ -164,7 +164,7 @@ const About: NextPage = () => {
                         animate={{scale: 1}}
                         transition={{delay: 0.5}}
                     >
-                        <h2>İbrahim SARI</h2>
+                        <h2>İ. S.</h2>
                         <h4>Frontend Developer</h4>
                     </motion.div>
                 </div>
@@ -339,7 +339,7 @@ const About: NextPage = () => {
                 </ul>
             </motion.section>
             <section className={styles.aboutPageSection}>
-                <Link href="/ibrahim-sari-resume-20230801.pdf">
+                <Link href="javascript:void(0);">
                     <a target="_blank">
                         <button className="btn">
                             <i className="fa fa-download"></i> &nbsp; Download my CV

@@ -4,7 +4,7 @@ const Footer = () => {
             <div className="copyright">
                 © {new Date().getFullYear()} |&nbsp;
                 <a href="https://www.linkedin.com/in/ibrahim--sari/" target="_blank" rel="noreferrer">
-                    İbrahim SARI
+                    İ. S.
                 </a>
             </div>
             <div className="social-links">

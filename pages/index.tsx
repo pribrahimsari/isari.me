@@ -88,7 +88,7 @@ const Home: NextPage = () => {
                             </a>
                         </Link>
 
-                        <Link href="/ibrahim-sari-resume-20230801.pdf">
+                        <Link href="javascript:void(0);">
                             <a target="_blank">
                                 <button className="btn">
                                     <i className="fa fa-download"></i> &nbsp; Download my CV
@@ -99,7 +99,7 @@ const Home: NextPage = () => {
                 </div>
                 <div className={styles.circularLandscape}>
                     <motion.img
-                        src="hero-profile-2.jpg"
+                        src="https://avatars.githubusercontent.com/u/36038198?v=4"
                         width="300px"
                         alt="my picture"
                         initial={{opacity: 0, x: 80}}

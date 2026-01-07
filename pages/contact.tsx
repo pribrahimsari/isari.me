@@ -98,7 +98,7 @@ const Contact: NextPage = () => {
     return (
         <Layout>
             <Head>
-                <title>Contact | İbrahim SARI</title>
+                <title>Contact | İ. S.</title>
             </Head>
             <section>
                 <h1>Contact</h1>
